@@ -37,3 +37,16 @@ botonesAgregarCarrito.forEach((boton) => {
 });
 
 
+// Función para redireccionar a la página correspondiente al hacer clic en un enlace del menú
+function handleNavLinkClick(event) {
+  event.preventDefault(); // Prevenir el comportamiento predeterminado del enlace
+  
+  var targetPage = event.target.getAttribute("href"); // Obtener la página objetivo del atributo "href"
+  window.location.href = targetPage; // Redirigir a la página objetivo
+}
+
+// Obtener todos los enlaces del menú y agregarles un controlador de eventos clic
+var navLinks = document.querySelectorAll(".navbar-nav .nav-link");
+navLinks.forEach(function(link) {
+  link.addEventListener("click", handleNavLinkClick);
+});
