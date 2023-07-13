@@ -1,0 +1,394 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mueblería</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+    <link rel="stylesheet" href="..//css/styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="..//css/custom-styles.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.2/font/bootstrap-icons.css">
+</head>
+<body>
+  <header>
+    <div class="logo">
+      <img src="../multmedia/images/logo.png" alt="Logo de la Mueblería">
+    </div>
+    <nav>
+      <ul class="menu">
+        <li><a href="..//index.html">Inicio</a></li>
+        <li><a href="./productos.html">Productos</a></li>
+        <li><a href="./categorias.html">Categorías</a></li>
+        <li><a href="./promociones.html">Promociones</a></li>
+        <li><a href="./nosotros.html">Nosotros</a></li>
+        <li><a href="./contacto.html">Contacto</a></li>
+      </ul>
+    </nav>
+    <div class="login ms-auto">
+      <a href="#" class="btn btn-gris"><i class="bi bi-google"></i></a>
+    </div>
+    <div class="carrito">
+      <a href="#" class="btn btn-gris"><i class="bi bi-cart-fill"></i> <span id="carrito-count">0</span></a>
+    </div>
+  </header>
+
+  <main>
+    <div class="container">
+      <div class="row">
+        <div class="col-2">
+          <div class="categorias sticky-top">
+            <h2>Categorías</h2>
+            <div class="mb-3">
+              <label for="living-select" class="form-label">Living:</label>
+              <select id="living-select" class="form-select" onchange="mostrarProductos()">
+                <option value="">Seleccione una opción</option>
+                <option value="living-sofas">Sofás</option>
+                <option value="living-sillones">Sillones</option>
+              </select>
+            </div>
+            <div class="mb-3">
+              <label for="dormitorio-select" class="form-label">Dormitorio:</label>
+              <select id="dormitorio-select" class="form-select" onchange="mostrarProductos()">
+                <option value="">Seleccione una opción</option>
+                <option value="dormitorio-camas">Camas</option>
+                <option value="dormitorio-armarios">Armarios</option>
+              </select>
+            </div>
+            <div class="mb-3">
+              <label for="comedor-select" class="form-label">Comedor:</label>
+              <select id="comedor-select" class="form-select" onchange="mostrarProductos()">
+                <option value="">Seleccione una opción</option>
+                <option value="comedor-mesas">Mesas</option>
+                <option value="comedor-sillas">Sillas</option>
+              </select>
+            </div>
+            <div class="mb-3">
+              <label for="oficina-select" class="form-label">Oficina:</label>
+              <select id="oficina-select" class="form-select" onchange="mostrarProductos()">
+                <option value="">Seleccione una opción</option>
+                <option value="oficina-escritorios">Escritorios</option>
+                <option value="oficina-sillas">Sillas</option>
+              </select>
+            </div>
+            <div class="mb-3">
+              <label for="jardin-select" class="form-label">Jardín:</label>
+              <select id="jardin-select" class="form-select" onchange="mostrarProductos()">
+                <option value="">Seleccione una opción</option>
+                <option value="jardin-mesas">Mesas</option>
+                <option value="jardin-sillas">Sillas</option>
+              </select>
+            </div>
+          </div>
+        </div>
+  
+        <div class="col-lg-10 col-md-10">
+          <div class="row" id="productos-container">
+            <div class="col-3">
+              <div class="card h-100">
+                <div class="card-body">
+                  <h3 class="card-title">Producto 1</h3>
+                  <div class="producto-img">
+                    <img src="..//multmedia/images/producto22.jpg" alt="Producto 1" class="img-fluid">
+                  </div>
+                  <p class="card-text">Precio: $99.99</p>
+                  <p class="card-text">Categoría: Living</p>
+                  <p class="card-text">Subcategoría: Sofás</p>
+                  <button class="btn btn-primary btn-agregar-carrito btn-custom">Agregar al carrito</button>
+                </div>
+              </div>
+            </div>
+            <div class="col-3">
+              <div class="card h-100">
+                <div class="card-body">
+                  <h3 class="card-title">Producto 2</h3>
+                  <div class="producto-img">
+                    <img src="..//multmedia/images/producto20.jpg" alt="Producto 1" class="img-fluid">
+                  </div>
+                  <p class="card-text">Precio: $149.99</p>
+                  <p class="card-text">Categoría: Dormitorio</p>
+                  <p class="card-text">Subcategoría: Camas</p>
+                  <button class="btn btn-primary btn-agregar-carrito btn-custom">Agregar al carrito</button>
+                </div>
+              </div>
+            </div>
+            <div class="col-3">
+              <div class="card h-100">
+                <div class="card-body">
+                  <h3 class="card-title">Producto 3</h3>
+                  <div class="producto-img">
+                    <img src="..//multmedia/images/producto8.jpg" alt="Producto 1" class="img-fluid">
+                  </div>
+                  <p class="card-text">Precio: $199.99</p>
+                  <p class="card-text">Categoría: Comedor</p>
+                  <p class="card-text">Subcategoría: Mesas</p>
+                  <button class="btn btn-primary btn-agregar-carrito btn-custom">Agregar al carrito</button>
+                </div>
+              </div>
+            </div>
+            <div class="col-3">
+              <div class="card h-100">
+                <div class="card-body">
+                  <h3 class="card-title">Producto 4</h3>
+                  <div class="producto-img">
+                    <img src="..//multmedia/images/producto12.jpg" alt="Producto 1" class="img-fluid">
+                  </div>
+                  <p class="card-text">Precio: $79.99</p>
+                  <p class="card-text">Categoría: Living</p>
+                  <p class="card-text">Subcategoría: Sillones</p>
+                  <button class="btn btn-primary btn-agregar-carrito btn-custom">Agregar al carrito</button>
+                </div>
+              </div>
+            </div>
+            <div class="col-3">
+              <div class="card h-100">
+                <div class="card-body">
+                  <h3 class="card-title">Producto 5</h3>
+                  <div class="producto-img">
+                    <img src="..//multmedia/images/producto18.jpg" alt="Producto 1" class="img-fluid">
+                  </div>
+                  <p class="card-text">Precio: $129.99</p>
+                  <p class="card-text">Categoría: Dormitorio</p>
+                  <p class="card-text">Subcategoría: Armarios</p>
+                  <button class="btn btn-primary btn-agregar-carrito btn-custom">Agregar al carrito</button>
+                </div>
+              </div>
+            </div>
+            <div class="col-3">
+              <div class="card h-100">
+                <div class="card-body">
+                  <h3 class="card-title">Producto 6</h3>
+                  <div class="producto-img">
+                    <img src="..//multmedia/images/producto15.jpg" alt="Producto 1" class="img-fluid">
+                  </div>
+                  <p class="card-text">Precio: $179.99</p>
+                  <p class="card-text">Categoría: Comedor</p>
+                  <p class="card-text">Subcategoría: Sillas</p>
+                  <button class="btn btn-primary btn-agregar-carrito btn-custom">Agregar al carrito</button>
+                </div>
+              </div>
+            </div>
+            <div class="col-3">
+              <div class="card h-100">
+                <div class="card-body">
+                  <h3 class="card-title">Producto 6</h3>
+                  <div class="producto-img">
+                    <img src="..//multmedia/images/producto11.jpg" alt="Producto 1" class="img-fluid">
+                  </div>
+                  <p class="card-text">Precio: $179.99</p>
+                  <p class="card-text">Categoría: Comedor</p>
+                  <p class="card-text">Subcategoría: Sillas</p>
+                  <button class="btn btn-primary btn-agregar-carrito btn-custom">Agregar al carrito</button>
+                </div>
+              </div>
+            </div>
+            <div class="col-3">
+              <div class="card h-100">
+                <div class="card-body">
+                  <h3 class="card-title">Producto 6</h3>
+                  <div class="producto-img">
+                    <img src="..//multmedia/images/producto4.jpg" alt="Producto 1" class="img-fluid">
+                  </div>
+                  <p class="card-text">Precio: $179.99</p>
+                  <p class="card-text">Categoría: Comedor</p>
+                  <p class="card-text">Subcategoría: Sillas</p>
+                  <button class="btn btn-primary btn-agregar-carrito btn-custom">Agregar al carrito</button>
+                </div>
+              </div>
+            </div>
+            <div class="col-3">
+              <div class="card h-100">
+                <div class="card-body">
+                  <h3 class="card-title">Producto 6</h3>
+                  <div class="producto-img">
+                    <img src="..//multmedia/images/producto7.jpg" alt="Producto 1" class="img-fluid">
+                  </div>
+                  <p class="card-text">Precio: $179.99</p>
+                  <p class="card-text">Categoría: Comedor</p>
+                  <p class="card-text">Subcategoría: Sillas</p>
+                  <button class="btn btn-primary btn-agregar-carrito btn-custom">Agregar al carrito</button>
+                </div>
+              </div>
+            </div>
+            <div class="col-3">
+              <div class="card h-100">
+                <div class="card-body">
+                  <h3 class="card-title">Producto 6</h3>
+                  <div class="producto-img">
+                    <img src="..//multmedia/images/producto19.jpg" alt="Producto 1" class="img-fluid">
+                  </div>
+                  <p class="card-text">Precio: $179.99</p>
+                  <p class="card-text">Categoría: Comedor</p>
+                  <p class="card-text">Subcategoría: Sillas</p>
+                  <button class="btn btn-primary btn-agregar-carrito btn-custom">Agregar al carrito</button>
+                </div>
+              </div>
+            </div>
+            <div class="col-3">
+              <div class="card h-100">
+                <div class="card-body">
+                  <h3 class="card-title">Producto 6</h3>
+                  <div class="producto-img">
+                    <img src="..//multmedia/images/producto9.jpg" alt="Producto 1" class="img-fluid">
+                  </div>
+                  <p class="card-text">Precio: $179.99</p>
+                  <p class="card-text">Categoría: Comedor</p>
+                  <p class="card-text">Subcategoría: Sillas</p>
+                  <button class="btn btn-primary btn-agregar-carrito btn-custom">Agregar al carrito</button>
+                </div>
+              </div>
+            </div>
+            <div class="col-3">
+              <div class="card h-100">
+                <div class="card-body">
+                  <h3 class="card-title">Producto 6</h3>
+                  <div class="producto-img">
+                    <img src="..//multmedia/images/producto23.jpg" alt="Producto 1" class="img-fluid">
+                  </div>
+                  <p class="card-text">Precio: $179.99</p>
+                  <p class="card-text">Categoría: Comedor</p>
+                  <p class="card-text">Subcategoría: Sillas</p>
+                  <button class="btn btn-primary btn-agregar-carrito btn-custom">Agregar al carrito</button>
+                </div>
+              </div>
+            </div>
+            <div class="col-3">
+              <div class="card h-100">
+                <div class="card-body">
+                  <h3 class="card-title">Producto 6</h3>
+                  <div class="producto-img">
+                    <img src="..//multmedia/images/producto33.jpg" alt="Producto 1" class="img-fluid">
+                  </div>
+                  <p class="card-text">Precio: $179.99</p>
+                  <p class="card-text">Categoría: Comedor</p>
+                  <p class="card-text">Subcategoría: Sillas</p>
+                  <button class="btn btn-primary btn-agregar-carrito btn-custom">Agregar al carrito</button>
+                </div>
+              </div>
+            </div>
+            <div class="col-3">
+              <div class="card h-100">
+                <div class="card-body">
+                  <h3 class="card-title">Producto 6</h3>
+                  <div class="producto-img">
+                    <img src="..//multmedia/images/producto31.jpg" alt="Producto 1" class="img-fluid">
+                  </div>
+                  <p class="card-text">Precio: $179.99</p>
+                  <p class="card-text">Categoría: Comedor</p>
+                  <p class="card-text">Subcategoría: Sillas</p>
+                  <button class="btn btn-primary btn-agregar-carrito btn-custom">Agregar al carrito</button>
+                </div>
+              </div>
+            </div>
+            <div class="col-3">
+              <div class="card h-100">
+                <div class="card-body">
+                  <h3 class="card-title">Producto 6</h3>
+                  <div class="producto-img">
+                    <img src="..//multmedia/images/producto30.jpg" alt="Producto 1" class="img-fluid">
+                  </div>
+                  <p class="card-text">Precio: $179.99</p>
+                  <p class="card-text">Categoría: Comedor</p>
+                  <p class="card-text">Subcategoría: Sillas</p>
+                  <button class="btn btn-primary btn-agregar-carrito btn-custom">Agregar al carrito</button>
+                </div>
+              </div>
+            </div>
+            <div class="col-3">
+              <div class="card h-100">
+                <div class="card-body">
+                  <h3 class="card-title">Producto 6</h3>
+                  <div class="producto-img">
+                    <img src="..//multmedia/images/producto25.jpg" alt="Producto 1" class="img-fluid">
+                  </div>
+                  <p class="card-text">Precio: $179.99</p>
+                  <p class="card-text">Categoría: Comedor</p>
+                  <p class="card-text">Subcategoría: Sillas</p>
+                  <button class="btn btn-primary btn-agregar-carrito btn-custom">Agregar al carrito</button>
+                </div>
+              </div>
+            </div>
+            <div class="col-3">
+              <div class="card h-100">
+                <div class="card-body">
+                  <h3 class="card-title">Producto 6</h3>
+                  <div class="producto-img">
+                    <img src="..//multmedia/images/producto14.jpg" alt="Producto 1" class="img-fluid">
+                  </div>
+                  <p class="card-text">Precio: $179.99</p>
+                  <p class="card-text">Categoría: Comedor</p>
+                  <p class="card-text">Subcategoría: Sillas</p>
+                  <button class="btn btn-primary btn-agregar-carrito btn-custom">Agregar al carrito</button>
+                </div>
+              </div>
+            </div>
+            <div class="col-3">
+              <div class="card h-100">
+                <div class="card-body">
+                  <h3 class="card-title">Producto 6</h3>
+                  <div class="producto-img">
+                    <img src="..//multmedia/images/producto16.jpg" alt="Producto 1" class="img-fluid">
+                  </div>
+                  <p class="card-text">Precio: $179.99</p>
+                  <p class="card-text">Categoría: Comedor</p>
+                  <p class="card-text">Subcategoría: Sillas</p>
+                  <button class="btn btn-primary btn-agregar-carrito btn-custom">Agregar al carrito</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+    <div class="container">
+      <div class="row">
+        <div class="col text-center">
+          <p class="mb-0">Página 1 de 3</p>
+        </div>
+      </div>
+    </div>
+    
+    <div class="container">
+      <div class="row">
+        <div class="col text-center">
+          <nav aria-label="Page navigation">
+            <ul class="pagination justify-content-center">
+              <li class="page-item disabled">
+                <a class="page-link" href="#" tabindex="-1" aria-disabled="true">Anterior</a>
+              </li>
+              <li class="page-item"><a class="page-link" href="#" onclick="mostrarProductos(1)">1</a></li>
+              <li class="page-item"><a class="page-link" href="#" onclick="mostrarProductos(2)">2</a></li>
+              <li class="page-item"><a class="page-link" href="#" onclick="mostrarProductos(3)">3</a></li>
+              <li class="page-item">
+                <a class="page-link" href="#">Siguiente</a>
+              </li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+    </div>
+  </main>
+  
+  
+
+  <footer>
+    <div class="contacto">
+      <p>Buscanos en cualquiera de nuestras sucursales:</p>
+      <ul>
+        <li>Montevideo Shopping <a href="tel:111111111">111111111</a></li>
+        <li>Shopping Punta Carretas <a href="tel:222222222">222222222</a></li>
+        <li>Shopping Nuevo Centro <a href="tel:333333333">333333333</a></li>
+      </ul>
+    </div>
+    <div class="mapa">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3272.12946261802!2d-56.138683124534495!3d-34.90320047284847!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x959f811610232aff%3A0xccbfb691fb160492!2sMontevideo%20Shopping%20Center!5e0!3m2!1ses-419!2suy!4v1686863440471!5m2!1ses-419!2suy" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </div>
+  </footer>
+  <script src="..//js/custom-script.js"></script>
+    <script src="https://kit.fontawesome.com/ba45cde2f7.js" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
+</body>
+</html>
+

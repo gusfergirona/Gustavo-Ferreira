@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mueblería</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+    <link rel="stylesheet" href="./css/styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./css/custom-styles.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.2/font/bootstrap-icons.css">
+</head>
+<body>
+  <header>
+    <div class="logo">
+      <img src="./multmedia/images/logo.png" alt="Logo de la Mueblería">
+    </div>
+    <nav>
+      <ul class="menu">
+        <li><a href="./index.html">Inicio</a></li>
+        <li><a href="./pages/productos.html">Productos</a></li>
+        <li><a href="./pages/categorias.html">Categorías</a></li>
+        <li><a href="./pages/promociones.html">Promociones</a></li>
+        <li><a href="./pages/nosotros.html">Nosotros</a></li>
+        <li><a href="./pages/contacto.html">Contacto</a></li>
+      </ul>
+    </nav>
+    <div class="login ms-auto">
+      <a href="#" class="btn btn-gris"><i class="bi bi-google"></i></a>
+    </div>
+    <div class="carrito">
+      <a href="#" class="btn btn-gris"><i class="bi bi-cart-fill"></i> <span id="carrito-count">0</span></a>
+    </div>
+  </header>
+
+  <section class="banner">
+    <img src="./multmedia/images/banner.jpg" alt="Imagen del Banner" class="img-fluid">
+    <div class="banner-texto d-flex align-items-start">
+      <div>
+        <h1>Bienvenido a nuestra Mueblería</h1>
+        <p>Encuentra los mejores muebles para tu hogar</p>
+      </div>
+    </div>
+    <div class="busqueda mt-5">
+      <input type="text" placeholder="Buscar..." class="form-control">
+      <button type="submit" class="btn btn-primary">Buscar</button>
+    </div>
+  </section>
+
+  <main>
+    <div class="container">
+      <div class="ofertas-temporada bg-gris-claro">
+        <h2>Ofertas de Temporada</h2>
+        <ul class="nav nav-pills">
+          <li class="nav-item">
+            <a class="nav-link bg-gris-oscuro" href="#" data-subcategoria="todos">Todos</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link bg-gris-oscuro" href="#" data-subcategoria="living">Living</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link bg-gris-oscuro" href="#" data-subcategoria="dormitorio">Dormitorio</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link bg-gris-oscuro" href="#" data-subcategoria="comedor">Comedor</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link bg-gris-oscuro" href="#" data-subcategoria="oficina">Oficina</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link bg-gris-oscuro" href="#" data-subcategoria="jardin">Jardín</a>
+          </li>
+        </ul>
+      </div>
+
+      <div class="productos-destacados">
+        <div class="row">
+          <div class="col-lg-4 col-md-6">
+            <div class="producto bg-gris-claro" data-subcategoria="dormitorio">
+              <div class="producto-img">
+                <img src="./multmedia/images/producto1.jpg" alt="Producto 1" class="img-fluid">
+              </div>
+              <div class="producto-info">
+                <h3>Ropero continental</h3>
+                <p class="producto-precio">Precio: $99.99</p>
+                <p class="producto-subcategoria">Subcategoría: Dormitorio</p>
+                <button class="btn btn-primary btn-agregar-carrito btn-custom">Agregar al carrito</button>
+				<span class="mensaje-oferta">Oferta</span>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6">
+            <div class="producto bg-gris-claro" data-subcategoria="dormitorio">
+              <div class="producto-img">
+                <img src="./multmedia/images/producto2.jpg" alt="Producto 2" class="img-fluid">
+              </div>
+              <div class="producto-info">
+                <h3>Sommier 2 plazas</h3>
+                <p class="producto-precio">Precio: $149.99</p>
+                <p class="producto-subcategoria">Subcategoría: Dormitorio</p>
+                <button class="btn btn-primary btn-agregar-carrito btn-custom">Agregar al carrito</button>
+				<span class="mensaje-oferta">Oferta</span>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6">
+            <div class="producto bg-gris-claro" data-subcategoria="comedor">
+              <div class="producto-img">
+                <img src="./multmedia/images/producto3.jpg" alt="Producto 3" class="img-fluid">
+              </div>
+              <div class="producto-info">
+                <h3>Mesa Aplina</h3>
+                <p class="producto-precio">Precio: $199.99</p>
+                <p class="producto-subcategoria">Subcategoría: Comedor</p>
+                <button class="btn btn-primary btn-agregar-carrito btn-custom">Agregar al carrito</button>
+				<span class="mensaje-oferta">Oferta</span>
+              </div>
+            </div>
+          </div>
+		  <div class="col-lg-4 col-md-6">
+            <div class="producto bg-gris-claro" data-subcategoria="dormitorio">
+              <div class="producto-img">
+                <img src="./multmedia/images/producto20.jpg" alt="Producto 1" class="img-fluid">
+              </div>
+              <div class="producto-info">
+                <h3>Ropero continental</h3>
+                <p class="producto-precio">Precio: $99.99</p>
+                <p class="producto-subcategoria">Subcategoría: Dormitorio</p>
+                <button class="btn btn-primary btn-agregar-carrito btn-custom">Agregar al carrito</button>
+				<span class="mensaje-oferta">Oferta</span>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6">
+            <div class="producto bg-gris-claro" data-subcategoria="dormitorio">
+              <div class="producto-img">
+                <img src="./multmedia/images/producto16.jpg" alt="Producto 2" class="img-fluid">
+              </div>
+              <div class="producto-info">
+                <h3>Sommier 2 plazas</h3>
+                <p class="producto-precio">Precio: $149.99</p>
+                <p class="producto-subcategoria">Subcategoría: Dormitorio</p>
+                <button class="btn btn-primary btn-agregar-carrito btn-custom">Agregar al carrito</button>
+				<span class="mensaje-oferta">Oferta</span>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6">
+            <div class="producto bg-gris-claro" data-subcategoria="comedor">
+              <div class="producto-img">
+                <img src="./multmedia/images/producto17.jpg" alt="Producto 3" class="img-fluid">
+              </div>
+              <div class="producto-info">
+                <h3>Mesa Aplina</h3>
+                <p class="producto-precio">Precio: $199.99</p>
+                <p class="producto-subcategoria">Subcategoría: Comedor</p>
+                <button class="btn btn-primary btn-agregar-carrito btn-custom">Agregar al carrito</button>
+				<span class="mensaje-oferta">Oferta</span>
+              </div>
+            </div>
+          </div>
+		  <div class="col-lg-4 col-md-6">
+            <div class="producto bg-gris-claro" data-subcategoria="dormitorio">
+              <div class="producto-img">
+                <img src="./multmedia/images/producto24.jpg" alt="Producto 1" class="img-fluid">
+              </div>
+              <div class="producto-info">
+                <h3>Ropero continental</h3>
+                <p class="producto-precio">Precio: $99.99</p>
+                <p class="producto-subcategoria">Subcategoría: Dormitorio</p>
+                <button class="btn btn-primary btn-agregar-carrito btn-custom">Agregar al carrito</button>
+				<span class="mensaje-oferta">Oferta</span>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6">
+            <div class="producto bg-gris-claro" data-subcategoria="dormitorio">
+              <div class="producto-img">
+                <img src="./multmedia/images/producto14.jpg" alt="Producto 2" class="img-fluid">
+              </div>
+              <div class="producto-info">
+                <h3>Sommier 2 plazas</h3>
+                <p class="producto-precio">Precio: $149.99</p>
+                <p class="producto-subcategoria">Subcategoría: Dormitorio</p>
+                <button class="btn btn-primary btn-agregar-carrito btn-custom">Agregar al carrito</button>
+				<span class="mensaje-oferta">Oferta</span>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6">
+            <div class="producto bg-gris-claro" data-subcategoria="comedor">
+              <div class="producto-img">
+                <img src="./multmedia/images/producto31.jpg" alt="Producto 3" class="img-fluid">
+              </div>
+              <div class="producto-info">
+                <h3>Mesa Aplina</h3>
+                <p class="producto-precio">Precio: $199.99</p>
+                <p class="producto-subcategoria">Subcategoría: Comedor</p>
+                <button class="btn btn-primary btn-agregar-carrito btn-custom">Agregar al carrito</button>
+				<span class="mensaje-oferta">Oferta</span>
+              </div>
+            </div>
+          </div>
+		  <div class="col-lg-4 col-md-6">
+            <div class="producto bg-gris-claro" data-subcategoria="dormitorio">
+              <div class="producto-img">
+                <img src="./multmedia/images/producto15.jpg" alt="Producto 1" class="img-fluid">
+              </div>
+              <div class="producto-info">
+                <h3>Ropero continental</h3>
+                <p class="producto-precio">Precio: $99.99</p>
+                <p class="producto-subcategoria">Subcategoría: Dormitorio</p>
+                <button class="btn btn-primary btn-agregar-carrito btn-custom">Agregar al carrito</button>
+				<span class="mensaje-oferta">Oferta</span>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6">
+            <div class="producto bg-gris-claro" data-subcategoria="dormitorio">
+              <div class="producto-img">
+                <img src="./multmedia/images/producto18.jpg" alt="Producto 2" class="img-fluid">
+              </div>
+              <div class="producto-info">
+                <h3>Sommier 2 plazas</h3>
+                <p class="producto-precio">Precio: $149.99</p>
+                <p class="producto-subcategoria">Subcategoría: Dormitorio</p>
+                <button class="btn btn-primary btn-agregar-carrito btn-custom">Agregar al carrito</button>
+				<span class="mensaje-oferta">Oferta</span>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6">
+            <div class="producto bg-gris-claro" data-subcategoria="comedor">
+              <div class="producto-img">
+                <img src="./multmedia/images/producto11.jpg" alt="Producto 3" class="img-fluid">
+              </div>
+              <div class="producto-info">
+                <h3>Mesa Aplina</h3>
+                <p class="producto-precio">Precio: $199.99</p>
+                <p class="producto-subcategoria">Subcategoría: Comedor</p>
+                <button class="btn btn-primary btn-agregar-carrito btn-custom">Agregar al carrito</button>
+				<span class="mensaje-oferta">Oferta</span>
+              </div>
+            </div>
+          </div>
+		  <div class="col-lg-4 col-md-6">
+            <div class="producto bg-gris-claro" data-subcategoria="dormitorio">
+              <div class="producto-img">
+                <img src="./multmedia/images/producto5.jpg" alt="Producto 1" class="img-fluid">
+              </div>
+              <div class="producto-info">
+                <h3>Ropero continental</h3>
+                <p class="producto-precio">Precio: $99.99</p>
+                <p class="producto-subcategoria">Subcategoría: Dormitorio</p>
+                <button class="btn btn-primary btn-agregar-carrito btn-custom">Agregar al carrito</button>
+				<span class="mensaje-oferta">Oferta</span>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6">
+            <div class="producto bg-gris-claro" data-subcategoria="dormitorio">
+              <div class="producto-img">
+                <img src="./multmedia/images/producto29.jpg" alt="Producto 2" class="img-fluid">
+              </div>
+              <div class="producto-info">
+                <h3>Sommier 2 plazas</h3>
+                <p class="producto-precio">Precio: $149.99</p>
+                <p class="producto-subcategoria">Subcategoría: Dormitorio</p>
+                <button class="btn btn-primary btn-agregar-carrito btn-custom">Agregar al carrito</button>
+				<span class="mensaje-oferta">Oferta</span>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6">
+            <div class="producto bg-gris-claro" data-subcategoria="comedor">
+              <div class="producto-img">
+                <img src="./multmedia/images/producto10.jpg" alt="Producto 3" class="img-fluid">
+              </div>
+              <div class="producto-info">
+                <h3>Mesa Aplina</h3>
+                <p class="producto-precio">Precio: $199.99</p>
+                <p class="producto-subcategoria">Subcategoría: Comedor</p>
+                <button class="btn btn-primary btn-agregar-carrito btn-custom">Agregar al carrito</button>
+				<span class="mensaje-oferta">Oferta</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <footer>
+    <div class="contacto">
+      <p>Buscanos en cualquiera de nuestras sucursales:</p>
+      <ul>
+        <li>Montevideo Shopping <a href="tel:111111111">111111111</a></li>
+        <li>Shopping Punta Carretas <a href="tel:222222222">222222222</a></li>
+        <li>Shopping Nuevo Centro <a href="tel:333333333">333333333</a></li>
+      </ul>
+    </div>
+    <div class="mapa">
+      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3272.12946261802!2d-56.138683124534495!3d-34.90320047284847!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x959f811610232aff%3A0xccbfb691fb160492!2sMontevideo%20Shopping%20Center!5e0!3m2!1ses-419!2suy!4v1686863440471!5m2!1ses-419!2suy" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </div>
+  </footer>
+  <script src="./js/custom-script.js"></script>
+  <script src="https://kit.fontawesome.com/ba45cde2f7.js" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
+</body>
+</html>
