@@ -1,3 +1,3 @@
 # Gustavo-Ferreira
 Proyecto de website para una mueblería
-Para la segunda Pre-Entrega trabajé más sobre las páginas index.html y productos.html, ya que se indicaba que armemos 2 para esta entrega, avancé un poco con las demás pero necesitan varios ajustes aún.
+Para la tercer Pre-Entrega corregí todas las páginas para que sean responsive, agregué el uso de sass y eos como fue solicitado.
