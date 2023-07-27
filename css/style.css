@@ -176,11 +176,6 @@ main .producto {
   border: 1px solid #ddd;
   border-radius: 5px;
   padding: 10px;
-  position: relative;
-  transition: transform 0.2s ease-in-out;
-}
-main .producto:hover {
-  transform: scale(1.05);
 }
 main .producto .producto-info h3 {
   margin-top: 0;

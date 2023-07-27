@@ -185,60 +185,53 @@ main {
 
 // Estilos para la sección "Productos"
 main {
-  padding: 20px;
-
-  h2 {
-    margin-top: 0;
-  }
-
-  .categorias {
-    margin-bottom: 20px;
-
-    label {
-      font-weight: bold;
+    padding: 20px;
+  
+    h2 {
+      margin-top: 0;
     }
-
-    select {
-      margin-bottom: 10px;
-    }
-  }
-
-  .productos {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-gap: 20px;
-  }
-
-  .producto {
-    background-color: #f9f9f9;
-    border: 1px solid #ddd;
-    border-radius: 5px;
-    padding: 10px;
-    position: relative;
-
-    // Agregamos una animación de escala al pasar el mouse por encima
-    transition: transform 0.2s ease-in-out;
-
-    &:hover {
-      transform: scale(1.05);
-    }
-
-    .producto-info {
-      h3 {
-        margin-top: 0;
+  
+    .categorias {
+      margin-bottom: 20px;
+  
+      label {
+        font-weight: bold;
+      }
+  
+      select {
+        margin-bottom: 10px;
       }
     }
-
-    .producto-precio {
-      font-weight: bold;
+  
+    .productos {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      grid-gap: 20px;
     }
-
-    .producto-categoria,
-    .producto-subcategoria {
-      margin-bottom: 5px;
+  
+    .producto {
+      background-color: #f9f9f9;
+      border: 1px solid #ddd;
+      border-radius: 5px;
+      padding: 10px;
+  
+      .producto-info {
+        h3 {
+          margin-top: 0;
+        }
+      }
+  
+      .producto-precio {
+        font-weight: bold;
+      }
+  
+      .producto-categoria,
+      .producto-subcategoria {
+        margin-bottom: 5px;
+      }
     }
   }
-}
+  
 
 // Estilos para la sección "Ofertas de Temporada"
 .categoria:hover {
