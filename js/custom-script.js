@@ -50,3 +50,18 @@ var navLinks = document.querySelectorAll(".navbar-nav .nav-link");
 navLinks.forEach(function(link) {
   link.addEventListener("click", handleNavLinkClick);
 });
+
+function mostrarProductos() {
+    const categoriaSelect = document.getElementById("categoria-select");
+    const categoriaSeleccionada = categoriaSelect.value;
+
+    const productos = document.querySelectorAll(".categoria-producto");
+    productos.forEach((producto) => {
+      const categoriaProducto = producto.dataset.categoria;
+      if (categoriaProducto === categoriaSeleccionada || categoriaSeleccionada === "") {
+        producto.style.display = "block";
+      } else {
+        producto.style.display = "none";
+      }
+    });
+  }
