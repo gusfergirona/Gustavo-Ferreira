@@ -1,4 +1,15 @@
 @charset "UTF-8";
+form input[type=submit], .banner .busqueda button, header button {
+  padding: 5px 10px;
+  border: none;
+  cursor: pointer;
+  font-size: 14px;
+  font-weight: bold;
+  text-align: center;
+  text-decoration: none;
+  border-radius: 5px;
+}
+
 body {
   margin: 0;
   padding: 0;
@@ -51,9 +62,12 @@ header .navbar .login-carrito img {
   height: 30px;
   margin: 0 5px;
 }
-
-.productos-destacados .producto {
-  margin-bottom: 2rem;
+header button {
+  background-color: #333;
+  color: #fff;
+}
+header button:hover {
+  background-color: #555;
 }
 
 .banner {
@@ -99,11 +113,11 @@ header .navbar .login-carrito img {
   width: 200px;
 }
 .banner .busqueda button {
-  padding: 5px 10px;
   background-color: #333;
   color: #fff;
-  border: none;
-  cursor: pointer;
+}
+.banner .busqueda button:hover {
+  background-color: #555;
 }
 
 main {
@@ -151,41 +165,34 @@ main section .categoria-img {
   }
 }
 
-main {
-  padding: 20px;
+.productos {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
 }
-main h2 {
-  margin-top: 0;
+.productos .card-img-top {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
 }
-main .categorias {
-  margin-bottom: 20px;
-}
-main .categorias label {
-  font-weight: bold;
-}
-main .categorias select {
-  margin-bottom: 10px;
-}
-main .productos {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  grid-gap: 20px;
-}
-main .producto {
-  background-color: #f9f9f9;
-  border: 1px solid #ddd;
-  border-radius: 5px;
+.productos .producto-info {
   padding: 10px;
 }
-main .producto .producto-info h3 {
-  margin-top: 0;
+.productos .producto-info h3 {
+  margin: 0;
+  font-size: 18px;
+  color: #333;
 }
-main .producto .producto-precio {
+.productos .producto-info p {
+  margin: 0;
+  font-size: 14px;
+  color: #777;
+}
+.productos .producto-precio {
   font-weight: bold;
 }
-main .producto .producto-categoria,
-main .producto .producto-subcategoria {
-  margin-bottom: 5px;
+.productos .producto-subcategoria {
+  margin-top: 5px;
 }
 
 .categoria:hover {
@@ -332,9 +339,6 @@ form textarea {
 form input[type=submit] {
   background-color: #333;
   color: #fff;
-  border: none;
-  padding: 10px 20px;
-  cursor: pointer;
 }
 form input[type=submit]:hover {
   background-color: #555;
@@ -432,7 +436,7 @@ footer .mapa {
   color: white;
 }
 
-.mensaje-oferta {
+.mensaje-oferta, .productos-destacados .producto .mensaje-oferta {
   position: relative;
   display: inline-block;
   padding: 5px;
@@ -455,32 +459,6 @@ footer .mapa {
   transform: scale(1.05);
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
-.productos-destacados .producto .mensaje-oferta {
-  position: absolute;
-  display: inline-block;
-  padding: 5px;
-  background-color: red;
-  color: white;
-  transform: rotate(45deg);
-  top: -10px;
-  right: -10px;
-  font-size: 12px;
-  font-weight: bold;
-  z-index: 1;
-  animation: pulse 1s infinite;
-}
-@keyframes pulse {
-  0% {
-    transform: scale(1);
-  }
-  50% {
-    transform: scale(1.1);
-  }
-  100% {
-    transform: scale(1);
-  }
-}
-
 section:nth-child(odd) {
   animation: slideInLeft 1s forwards;
 }
@@ -506,13 +484,6 @@ section:nth-child(even) {
     transform: translateX(0);
     opacity: 1;
   }
-}
-
-footer .contacto {
-  animation: slideInLeft 1s forwards;
-}
-footer .mapa {
-  animation: slideInRight 1s forwards;
 }
 
 /*# sourceMappingURL=style.css.map */

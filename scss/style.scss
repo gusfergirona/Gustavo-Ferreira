@@ -1,223 +1,236 @@
-// Estilos generales
-$primary-font: Arial, sans-serif;
-$primary-color: #777;
-$secondary-color: #ddd;
-$background-color: #f2f2f2;
-
-body {
-  margin: 0;
-  padding: 0;
-  font-family: $primary-font;
-}
-
-// Estilos del encabezado 
-header {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  padding: 0px;
-  background-color: #f1f1f1;
-  width: 100%;
-  animation: fadeIn 1s;
-
-  @keyframes fadeIn {
-    from {
-      opacity: 0;
-    }
-    to {
-      opacity: 1;
-    }
-  }
-
-  .navbar {
-    display: flex;
-    position: relative;
-    width: 100%;
-    overflow: hidden;
-
-    .logo img {
-      height: 50px;
-    }
-
-    .menu {
-      list-style: none;
-      display: flex;
-
-      li {
-        margin-right: 10px;
-
-        a {
-          text-decoration: none;
-          color: $primary-color;
-          padding: 5px;
-        }
-      }
-    }
-
-    .login-carrito {
-      display: flex;
-      align-items: right;
-
-      img {
-        height: 30px;
-        margin: 0 5px;
-      }
-    }
-  }
-}
-
-// Estilos del banner
-.productos-destacados .producto {
-  margin-bottom: 2rem;
-}
-
-.banner {
-  position: relative;
-  width: 100%;
-  height: 400px;
-  overflow: hidden;
-
-  img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-  }
-
-  .banner-texto {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+@mixin boton-comun {
+    padding: 5px 10px;
+    border: none;
+    cursor: pointer;
+    font-size: 14px;
+    font-weight: bold;
     text-align: center;
-    color: #000;
-
-    h1 {
-      font-size: 24px;
-      margin: 10px 0;
-    }
-
-    p {
-      font-size: 16px;
-      color: #000;
-    }
+    text-decoration: none;
+    border-radius: 5px;
   }
-
-  .busqueda {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-top: 5rem;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    text-align: center;
-
-    input[type="text"] {
-      padding: 5px;
-      width: 200px;
-    }
-
-    button {
-      padding: 5px 10px;
-      background-color: #333;
-      color: #fff;
-      border: none;
-      cursor: pointer;
-    }
+  
+  %boton-comun-placeholder {
+    @include boton-comun;
   }
-}
-
-// Estilos del contenido principal
-main {
-  margin: 20px;
-
-  .ofertas-temporada {
-    text-align: center;
-    margin-bottom: 20px;
-
-    h2 {
-      font-size: 20px;
-    }
-  }
-
-  // Estilos para la sección "Categorias"
-  section {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+  
+  // Estilos generales
+  $primary-font: Arial, sans-serif;
+  $primary-color: #777;
+  $secondary-color: #ddd;
+  $background-color: #f2f2f2;
+  
+  body {
     margin: 0;
-    opacity: 0; // Inicialmente, las secciones están ocultas
-    animation: fadeIn 1s forwards; // Mostramos las secciones con una animación de desvanecimiento
-
+    padding: 0;
+    font-family: $primary-font;
+  }
+  
+  // Estilos del encabezado 
+  header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0px;
+    background-color: #f1f1f1;
+    width: 100%;
+    animation: fadeIn 1s;
+  
     @keyframes fadeIn {
+      from {
+        opacity: 0;
+      }
       to {
         opacity: 1;
       }
     }
-
-    .categoria img {
-      width: 300px;
-      height: 200px;
+  
+    .navbar {
+      display: flex;
+      position: relative;
+      width: 100%;
+      overflow: hidden;
+  
+      .logo img {
+        height: 50px;
+      }
+  
+      .menu {
+        list-style: none;
+        display: flex;
+  
+        li {
+          margin-right: 10px;
+  
+          a {
+            text-decoration: none;
+            color: $primary-color;
+            padding: 5px;
+          }
+        }
+      }
+  
+      .login-carrito {
+        display: flex;
+        align-items: right;
+  
+        img {
+          height: 30px;
+          margin: 0 5px;
+        }
+      }
+    }
+  
+    button {
+      @extend %boton-comun-placeholder;
+      background-color: #333;
+      color: #fff;
+  
+      &:hover {
+        background-color: #555;
+      }
+    }
+  }
+  
+  // Estilos del banner
+  .banner {
+    position: relative;
+    width: 100%;
+    height: 400px;
+    overflow: hidden;
+  
+    img {
+      width: 100%;
+      height: 100%;
       object-fit: cover;
     }
-
-    .categoria-img {
-      object-fit: cover;
-      height: 400px;
-      margin: 0;
-      padding: 0;
-    }
-  }
-
-  @media (max-width: 767.98px) {
-    .col-sm-6 {
-      padding: 0;
-    }
-  }
-
-  @media (min-width: 992px) {
-    .col-md-2 {
-      padding: 0;
-    }
-  }
-}
-
-// Estilos para la sección "Productos"
-main {
-    padding: 20px;
   
-    h2 {
-      margin-top: 0;
+    .banner-texto {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      text-align: center;
+      color: #000;
+  
+      h1 {
+        font-size: 24px;
+        margin: 10px 0;
+      }
+  
+      p {
+        font-size: 16px;
+        color: #000;
+      }
     }
   
-    .categorias {
+    .busqueda {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin-top: 5rem;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      text-align: center;
+  
+      input[type="text"] {
+        padding: 5px;
+        width: 200px;
+      }
+  
+      button {
+        @extend %boton-comun-placeholder;
+        background-color: #333;
+        color: #fff;
+  
+        &:hover {
+          background-color: #555;
+        }
+      }
+    }
+  }
+  
+  // Estilos del contenido principal
+  main {
+    margin: 20px;
+  
+    .ofertas-temporada {
+      text-align: center;
       margin-bottom: 20px;
   
-      label {
-        font-weight: bold;
-      }
-  
-      select {
-        margin-bottom: 10px;
+      h2 {
+        font-size: 20px;
       }
     }
   
-    .productos {
-      display: grid;
-      grid-template-columns: repeat(3, 1fr);
-      grid-gap: 20px;
+    // Estilos para la sección "Categorias"
+    section {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin: 0;
+      opacity: 0; 
+      animation: fadeIn 1s forwards; 
+  
+      @keyframes fadeIn {
+        to {
+          opacity: 1;
+        }
+      }
+  
+      .categoria img {
+        width: 300px;
+        height: 200px;
+        object-fit: cover;
+      }
+  
+      .categoria-img {
+        object-fit: cover;
+        height: 400px;
+        margin: 0;
+        padding: 0;
+      }
     }
   
-    .producto {
-      background-color: #f9f9f9;
-      border: 1px solid #ddd;
-      border-radius: 5px;
-      padding: 10px;
+    @media (max-width: 767.98px) {
+      .col-sm-6 {
+        padding: 0;
+      }
+    }
+  
+    @media (min-width: 992px) {
+      .col-md-2 {
+        padding: 0;
+      }
+    }
+  }
+  
+  // Estilos para la sección "Productos"
+  .productos {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  
+        .card-img-top {
+          width: 100%; 
+          height: 200px; 
+          object-fit: cover; 
+        }
   
       .producto-info {
+        padding: 10px;
+  
         h3 {
-          margin-top: 0;
+          margin: 0;
+          font-size: 18px;
+          color: #333;
+        }
+  
+        p {
+          margin: 0;
+          font-size: 14px;
+          color: #777;
         }
       }
   
@@ -225,390 +238,348 @@ main {
         font-weight: bold;
       }
   
-      .producto-categoria,
       .producto-subcategoria {
-        margin-bottom: 5px;
+        margin-top: 5px;
+      }
+    }
+  
+  // Estilos para la sección "Ofertas de Temporada"
+  .categoria:hover {
+    cursor: pointer;
+  }
+  
+  .producto {
+    display: block;
+    margin-bottom: 20px;
+  }
+  
+  .categoria[data-subcategoria]:not([data-subcategoria="todos"]) ~ .productos-destacados .producto:not([data-subcategoria="todos"]),
+  .categoria[data-subcategoria="todos"] ~ .productos-destacados .producto {
+    display: none;
+  }
+  
+  .ofertas-temporada ul {
+    position: relative;
+    left: -50px; 
+    opacity: 0; 
+    animation: slideInLeft 1s forwards; 
+  
+    @keyframes slideInLeft {
+      to {
+        left: 0;
+        opacity: 1;
+      }
+    }
+  
+    display: flex;
+    justify-content: center;
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  .ofertas-temporada li {
+    margin-right: 10px;
+  
+    &::before {
+      content: "\2022";
+      margin-right: 5px;
+    }
+  }
+  
+  .productos-destacados {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  
+  .fila-productos {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+  }
+  
+  .producto {
+    width: 300px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    margin: 10px;
+  
+    .producto-img {
+      height: 200px;
+      border-top-left-radius: 10px;
+      border-top-right-radius: 10px;
+      overflow: hidden;
+  
+      img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+      }
+    }
+  
+    .producto-info {
+      padding: 10px;
+  
+      h3 {
+        margin: 0;
+        font-size: 18px;
+        color: #333;
+      }
+  
+      p {
+        margin: 0;
+        font-size: 14px;
+        color: #777;
+      }
+    }
+  
+    .producto-precio {
+      font-weight: bold;
+    }
+  
+    .producto-subcategoria {
+      margin-top: 5px;
+    }
+  }
+  
+  // Estilos para la sección "Nosotros"
+  main {
+    max-width: 100%;
+    margin: 0 auto;
+    padding: 40px;
+    box-sizing: border-box;
+  }
+  
+  section {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-bottom: 40px;
+    opacity: 0; 
+    animation: fadeIn 1s forwards; 
+  
+    @keyframes fadeIn {
+      to {
+        opacity: 1;
+      }
+    }
+  
+    h2 {
+      flex-basis: 50%;
+      text-align: center;
+      margin: 0 auto;
+    }
+  
+    p {
+      flex-basis: 50%;
+      margin: 0;
+      padding: 20px;
+    }
+  
+    .nosotros {
+      max-height: 400px;
+      object-fit: cover;
+      width: auto;
+      max-width: 50%;
+    }
+  }
+  
+  // Estilos para la sección "Contacto"
+  form {
+    display: grid;
+    grid-gap: 10px;
+    max-width: 400px;
+    margin: 0 auto;
+  
+    label {
+      font-weight: bold;
+    }
+  
+    input,
+    textarea {
+      width: 100%;
+      padding: 10px;
+      border: 1px solid #ccc;
+    }
+  
+    input[type="submit"] {
+      @extend %boton-comun-placeholder;
+      background-color: #333;
+      color: #fff;
+  
+      &:hover {
+        background-color: #555;
+      }
+    }
+  
+    .error {
+      color: red;
+      margin-top: 5px;
+    }
+  
+    .success {
+      color: green;
+      margin-top: 5px;
+    }
+  }
+  
+  // Estilos del pie de página
+  footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #f0f0f0;
+    padding: 20px;
+  
+    .contacto {
+      p {
+        margin: 0;
+      }
+  
+      ul {
+        list-style: none;
+        padding: 0;
+        margin: 10px 0 0 0;
+  
+        li {
+          margin-bottom: 5px;
+  
+          a {
+            text-decoration: none;
+            color: #333;
+          }
+        }
+      }
+    }
+  
+    .mapa {
+      flex-grow: 1;
+      margin-left: 20px;
+  
+      iframe {
+        width: 100%;
+        height: 300px;
+        border: 0;
+      }
+    }
+  
+    .contacto,
+    .mapa {
+      animation: slideIn 1s;
+    }
+  
+    @keyframes slideIn {
+      from {
+        transform: translateY(100px);
+        opacity: 0;
+      }
+      to {
+        transform: translateY(0);
+        opacity: 1;
       }
     }
   }
   
-
-// Estilos para la sección "Ofertas de Temporada"
-.categoria:hover {
-  cursor: pointer;
-}
-
-.producto {
-  display: block;
-  margin-bottom: 20px;
-}
-
-.categoria[data-subcategoria]:not([data-subcategoria="todos"]) ~ .productos-destacados .producto:not([data-subcategoria="todos"]),
-.categoria[data-subcategoria="todos"] ~ .productos-destacados .producto {
-  display: none;
-}
-
-.ofertas-temporada ul {
-  position: relative;
-  left: -50px; // Desplazamos la lista hacia la izquierda
-  opacity: 0; // Inicialmente, la lista está oculta
-  animation: slideInLeft 1s forwards; // Mostramos la lista con una animación de movimiento
-
-  @keyframes slideInLeft {
-    to {
-      left: 0;
-      opacity: 1;
-    }
-  }
-
-  display: flex;
-  justify-content: center;
-  list-style-type: none;
-  padding: 0;
-}
-
-.ofertas-temporada li {
-  margin-right: 10px;
-
-  &::before {
-    content: "\2022";
-    margin-right: 5px;
-  }
-}
-
-.productos-destacados {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-}
-
-.fila-productos {
-  display: flex;
-  justify-content: center;
-  margin-bottom: 20px;
-}
-
-.producto {
-  width: 300px;
-  background-color: #fff;
-  border-radius: 10px;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-  margin: 10px;
-
-  .producto-img {
-    height: 200px;
-    border-top-left-radius: 10px;
-    border-top-right-radius: 10px;
-    overflow: hidden;
-
-    img {
-      width: 100%;
-      height: 100%;
-      object-fit: cover;
-    }
-  }
-
-  .producto-info {
-    padding: 10px;
-
-    h3 {
-      margin: 0;
-      font-size: 18px;
-      color: #333;
-    }
-
-    p {
-      margin: 0;
-      font-size: 14px;
-      color: #777;
-    }
-  }
-
-  .producto-precio {
-    font-weight: bold;
-  }
-
-  .producto-subcategoria {
-    margin-top: 5px;
-  }
-}
-
-// Estilos para la sección "Nosotros"
-main {
-  max-width: 100%;
-  margin: 0 auto;
-  padding: 40px;
-  box-sizing: border-box;
-}
-
-section {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  margin-bottom: 40px;
-  opacity: 0; // Inicialmente, las secciones están ocultas
-  animation: fadeIn 1s forwards; // Mostramos las secciones con una animación de desvanecimiento
-
-  @keyframes fadeIn {
-    to {
-      opacity: 1;
-    }
-  }
-
-  h2 {
-    flex-basis: 50%;
-    text-align: center;
-    margin: 0 auto;
-  }
-
-  p {
-    flex-basis: 50%;
-    margin: 0;
-    padding: 20px;
-  }
-
-  .nosotros {
-    max-height: 400px;
-    object-fit: cover;
-    width: auto;
-    max-width: 50%;
-  }
-}
-
-// Estilos para la sección "Contacto"
-form {
-  display: grid;
-  grid-gap: 10px;
-  max-width: 400px;
-  margin: 0 auto;
-
-  label {
-    font-weight: bold;
-  }
-
-  input,
-  textarea {
-    width: 100%;
-    padding: 10px;
-    border: 1px solid #ccc;
-  }
-
-  input[type="submit"] {
-    background-color: #333;
+  // Estilos adicionales
+  .btn-gris {
+    background-color: #777;
     color: #fff;
-    border: none;
-    padding: 10px 20px;
-    cursor: pointer;
-
+  }
+  
+  .bg-gris-claro {
+    background-color: #f2f2f2;
+  }
+  
+  .bg-gris-oscuro {
+    background-color: #777;
+    color: #000;
+  }
+  
+  .producto {
+    background-color: #f2f2f2;
+  
     &:hover {
-      background-color: #555;
+      background-color: #ddd;
     }
   }
-
-  .error {
-    color: red;
-    margin-top: 5px;
-  }
-
-  .success {
-    color: green;
-    margin-top: 5px;
-  }
-}
-
-// Estilos del pie de página con animación de movimiento (slide-in)
-footer {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  background-color: #f0f0f0;
-  padding: 20px;
-
-  .contacto {
-    p {
-      margin: 0;
-    }
-
-    ul {
-      list-style: none;
-      padding: 0;
-      margin: 10px 0 0 0;
-
-      li {
-        margin-bottom: 5px;
-
-        a {
-          text-decoration: none;
-          color: #333;
-        }
-      }
-    }
-  }
-
-  .mapa {
-    flex-grow: 1;
-    margin-left: 20px;
-
-    iframe {
-      width: 100%;
-      height: 300px;
-      border: 0;
-    }
-  }
-
-  // Agregamos la animación a cada elemento del pie de página
-  .contacto,
-  .mapa {
-    animation: slideIn 1s;
-  }
-
-  // Definimos la animación de slide-in
-  @keyframes slideIn {
-    from {
-      transform: translateY(100px);
-      opacity: 0;
-    }
-    to {
-      transform: translateY(0);
-      opacity: 1;
-    }
-  }
-}
-
-// Estilos adicionales
-.btn-gris {
-  background-color: #777;
-  color: #fff;
-}
-
-.bg-gris-claro {
-  background-color: #f2f2f2;
-}
-
-.bg-gris-oscuro {
-  background-color: #777;
-  color: #000;
-}
-
-.producto {
-  background-color: #f2f2f2;
-
-  &:hover {
+  
+  .nav-pills .nav-link.active {
     background-color: #ddd;
+    color: #000;
+    border-color: #000;
   }
-}
-
-.nav-pills .nav-link.active {
-  background-color: #ddd;
-  color: #000;
-  border-color: #000;
-}
-
-.btn-custom {
-  background-color: white;
-  color: black;
-  border: 1px solid black;
-  transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out; // Agregamos una transición suave para el cambio de color
-
-  &:hover {
-    background-color: black;
-    color: white;
+  
+  .btn-custom {
+    background-color: white;
+    color: black;
+    border: 1px solid black;
+    transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out; // Agregamos una transición suave para el cambio de color
+  
+    &:hover {
+      background-color: black;
+      color: white;
+    }
   }
-}
-
-.mensaje-oferta {
-  position: relative;
-  display: inline-block;
-  padding: 5px;
-  background-color: red;
-  color: white;
-  transform: rotate(45deg);
-  top: -265px;
-  left: 65px;
-  font-size: 12px;
-  font-weight: bold;
-  z-index: 1;
-}
-
-// Animaciones adicionales
-.productos-destacados .producto {
-  transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out; // Agregamos una transición suave para el cambio de tamaño y sombra del producto
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); // Agregamos una sombra al producto
-  position: relative; // Añadimos la posición relativa para que el mensaje de oferta sea posicionado correctamente
-
-  &:hover {
-    transform: scale(1.05);
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-  }
-
+  
   .mensaje-oferta {
-    position: absolute;
+    position: relative;
     display: inline-block;
     padding: 5px;
     background-color: red;
     color: white;
     transform: rotate(45deg);
-    top: -10px;
-    right: -10px;
+    top: -265px;
+    left: 65px;
     font-size: 12px;
     font-weight: bold;
     z-index: 1;
-    animation: pulse 1s infinite; // Agregamos una animación de pulsación al mensaje de oferta
   }
-
-  @keyframes pulse {
-    0% {
-      transform: scale(1);
+  
+  .productos-destacados .producto {
+    transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out; 
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); 
+    position: relative; 
+  
+    &:hover {
+      transform: scale(1.05);
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
     }
-    50% {
-      transform: scale(1.1);
-    }
-    100% {
-      transform: scale(1);
-    }
-  }
-}
-
-section {
-  &:nth-child(odd) {
-    animation: slideInLeft 1s forwards;
-  }
-
-  &:nth-child(even) {
-    animation: slideInRight 1s forwards;
-  }
-
-  @keyframes slideInLeft {
-    from {
-      transform: translateX(-100px);
-      opacity: 0;
-    }
-    to {
-      transform: translateX(0);
-      opacity: 1;
+  
+    .mensaje-oferta {
+      @extend .mensaje-oferta;
     }
   }
-
-  @keyframes slideInRight {
-    from {
-      transform: translateX(100px);
-      opacity: 0;
+  
+  section {
+    &:nth-child(odd) {
+      animation: slideInLeft 1s forwards;
     }
-    to {
-      transform: translateX(0);
-      opacity: 1;
+  
+    &:nth-child(even) {
+      animation: slideInRight 1s forwards;
+    }
+  
+    @keyframes slideInLeft {
+      from {
+        transform: translateX(-100px);
+        opacity: 0;
+      }
+      to {
+        transform: translateX(0);
+        opacity: 1;
+      }
+    }
+  
+    @keyframes slideInRight {
+      from {
+        transform: translateX(100px);
+        opacity: 0;
+      }
+      to {
+        transform: translateX(0);
+        opacity: 1;
+      }
     }
   }
-}
-
-footer {
-  .contacto {
-    animation: slideInLeft 1s forwards;
-  }
-
-  .mapa {
-    animation: slideInRight 1s forwards;
-  }
-}
-
-
+  
