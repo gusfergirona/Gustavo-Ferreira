@@ -118,4 +118,44 @@ actualizarContadorCarrito();
 
 
   
-  
+ 
+  const productosContainer = document.getElementById('productos-container');
+  const paginacion = document.querySelector('.pagination');
+
+  const productosPorPagina = 9; // Cambia el número de productos por página según tu preferencia
+  const productos = Array.from(document.querySelectorAll('.producto'));
+
+  function mostrarProductosEnPagina(pagina) {
+    const inicio = (pagina - 1) * productosPorPagina;
+    const fin = inicio + productosPorPagina;
+
+    productos.forEach((producto, index) => {
+      if (index >= inicio && index < fin) {
+        producto.style.display = 'block';
+      } else {
+        producto.style.display = 'none';
+      }
+    });
+  }
+
+  function crearBotonesDePaginacion() {
+    const totalPaginas = Math.ceil(productos.length / productosPorPagina);
+
+    let html = '';
+    for (let i = 1; i <= totalPaginas; i++) {
+      html += `<li class="page-item"><a class="page-link" href="#" data-pagina="${i}">${i}</a></li>`;
+    }
+
+    paginacion.innerHTML = html;
+  }
+
+  paginacion.addEventListener('click', (event) => {
+    if (event.target.tagName === 'A') {
+      const paginaSeleccionada = parseInt(event.target.dataset.pagina);
+      mostrarProductosEnPagina(paginaSeleccionada);
+    }
+  });
+
+  mostrarProductosEnPagina(1);
+  crearBotonesDePaginacion();
+
