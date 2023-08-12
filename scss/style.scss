@@ -12,6 +12,31 @@
   %boton-comun-placeholder {
     @include boton-comun;
   }
+
+
+
+   
+// Establecer la altura del carrusel en el 70% de la altura de la ventana gráfica
+#myCarousel {
+  height: 70vh;
+}
+
+// Centrar verticalmente el contenido del carrusel
+.carousel-inner {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+}
+
+// Ajustar el tamaño de las imágenes para llenar el carrusel
+.carousel-inner img {
+  max-width: 100%;
+  max-height: 100%;
+}
+
+
+
   
   // Estilos generales
   $primary-font: Arial, sans-serif;
@@ -582,4 +607,4 @@
       }
     }
   }
-  
+ 

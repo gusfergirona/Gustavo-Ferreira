@@ -51,460 +51,1259 @@
   </header>
 
   <main>
-  <div class="container">
-    <div class="row">
-      <div class="col-lg-2 col-md-3">
-        <div class="categorias sticky-top">
-          <h2>Categorías</h2>
-          <div class="mb-3">
-            <label for="categoria-select" class="form-label">Categoría:</label>
-            <select id="categoria-select" class="form-select" onchange="mostrarProductos()">
-              <option value="">Seleccione una opción</option>
-              <option value="Living">Living</option>
-              <option value="Dormitorio">Dormitorio</option>
-              <option value="Comedor">Comedor</option>
-              <option value="Oficina">Oficina</option>
-              <option value="Jardín">Jardín</option>
-            </select>
-          </div>
-        </div>
-      </div>
-
-      <div class="col-lg-10 col-md-9" id="productos-container">
-        <div class="row">
-          <div class="col-lg-4 col-md-6 mb-4 categoria-producto" data-categoria="Dormitorio">
-            <div class="producto-img">
-              <img src="../multmedia/images/producto10.jpg" alt="Producto 1" class="img-fluid">
-            </div>
-			<div class="producto-info">
-                <h4 class="card-title">Cómoda Elegance</h4>
-                <h5>$99.99</h5>
-                <p class="card-text">Categoría: Dormitorio</p>
-                <p class="card-text">Subcategoría: Cóomoda</p>
-                <button class="btn btn-primary btn-agregar-carrito btn-custom">Agregar al carrito</button>
-            </div>
-          </div>
-          <div class="col-lg-4 col-md-6 mb-4 categoria-producto" data-categoria="Dormitorio">
-            <div class="card h-100">
-              <div class="badge oferta">Oferta</div>
-              <img class="card-img-top" src="../multmedia/images/producto11.jpg" alt="Producto 1">
-              <div class="card-body">
-                <h4 class="card-title">Cómoda futura</h4>
-                <h5>$99.99</h5>
-                <p class="card-text">Categoría: Living</p>
-                <p class="card-text">Subcategoría: Sofás</p>
-                <button class="btn btn-primary btn-agregar-carrito btn-custom">Agregar al carrito</button>
-              </div>
-            </div>
-          </div>
-          <div class="col-lg-4 col-md-6 mb-4 categoria-producto" data-categoria="Dormitorio">
-            <div class="card h-100">
-              <div class="badge oferta">Oferta</div>
-              <img class="card-img-top" src="../multmedia/images/producto12.jpg" alt="Producto 1">
-              <div class="card-body">
-                <h4 class="card-title">Placard caoba</h4>
-                <h5>$99.99</h5>
-                <p class="card-text">Categoría: Living</p>
-                <p class="card-text">Subcategoría: Sofás</p>
-                <button class="btn btn-primary btn-agregar-carrito btn-custom">Agregar al carrito</button>
-              </div>
-            </div>
-          </div>
-          <div class="col-lg-4 col-md-6 mb-4 categoria-producto" data-categoria="Dormitorio">
-            <div class="card h-100">
-              <div class="badge oferta">Oferta</div>
-              <img class="card-img-top" src="../multmedia/images/producto13.jpg" alt="Producto 1">
-              <div class="card-body">
-                <h4 class="card-title">Placard Euro</h4>
-                <h5>$99.99</h5>
-                <p class="card-text">Categoría: Living</p>
-                <p class="card-text">Subcategoría: Sofás</p>
-                <button class="btn btn-primary btn-agregar-carrito btn-custom">Agregar al carrito</button>
-              </div>
-            </div>
-          </div>
-          <div class="col-lg-4 col-md-6 mb-4 categoria-producto" data-categoria="Dormitorio">
-            <div class="card h-100">
-              <div class="badge oferta">Oferta</div>
-              <img class="card-img-top" src="../multmedia/images/producto14.jpg" alt="Producto 1">
-              <div class="card-body">
-                <h4 class="card-title">Respaldo futura</h4>
-                <h5>$99.99</h5>
-                <p class="card-text">Categoría: Living</p>
-                <p class="card-text">Subcategoría: Sofás</p>
-                <button class="btn btn-primary btn-agregar-carrito btn-custom">Agregar al carrito</button>
-              </div>
-            </div>
-          </div>
-          <div class="col-lg-4 col-md-6 mb-4 categoria-producto" data-categoria="Dormitorio">
-            <div class="card h-100">
-              <div class="badge oferta">Oferta</div>
-              <img class="card-img-top" src="../multmedia/images/producto15.jpg" alt="Producto 1">
-              <div class="card-body">
-                <h4 class="card-title">Respaldo Euro</h4>
-                <h5>$99.99</h5>
-                <p class="card-text">Categoría: Living</p>
-                <p class="card-text">Subcategoría: Sofás</p>
-                <button class="btn btn-primary btn-agregar-carrito btn-custom">Agregar al carrito</button>
-              </div>
-            </div>
-          </div>
-          <div class="col-lg-4 col-md-6 mb-4 categoria-producto" data-categoria="Dormitorio">
-            <div class="card h-100">
-              <div class="badge oferta">Oferta</div>
-              <img class="card-img-top" src="../multmedia/images/producto16.jpg" alt="Producto 1">
-              <div class="card-body">
-                <h4 class="card-title">Cómoda Espiga</h4>
-                <h5>$99.99</h5>
-                <p class="card-text">Categoría: Living</p>
-                <p class="card-text">Subcategoría: Sofás</p>
-                <button class="btn btn-primary btn-agregar-carrito btn-custom">Agregar al carrito</button>
-              </div>
-            </div>
-          </div>
-          <div class="col-lg-4 col-md-6 mb-4 categoria-producto" data-categoria="Dormitorio">
-            <div class="card h-100">
-              <div class="badge oferta">Oferta</div>
-              <img class="card-img-top" src="../multmedia/images/producto17.jpg" alt="Producto 1">
-              <div class="card-body">
-                <h4 class="card-title">Cómoda blank</h4>
-                <h5>$99.99</h5>
-                <p class="card-text">Categoría: Living</p>
-                <p class="card-text">Subcategoría: Sofás</p>
-                <button class="btn btn-primary btn-agregar-carrito btn-custom">Agregar al carrito</button>
-              </div>
-            </div>
-          </div>
-          <div class="col-lg-4 col-md-6 mb-4 categoria-producto" data-categoria="Dormitorio">
-            <div class="card h-100">
-              <div class="badge oferta">Oferta</div>
-              <img class="card-img-top" src="../multmedia/images/producto18.jpg" alt="Producto 1">
-              <div class="card-body">
-                <h4 class="card-title">Sommier baúl</h4>
-                <h5>$99.99</h5>
-                <p class="card-text">Categoría: Living</p>
-                <p class="card-text">Subcategoría: Sofás</p>
-                <button class="btn btn-primary btn-agregar-carrito btn-custom">Agregar al carrito</button>
-              </div>
-            </div>
-          </div>
-          <div class="col-lg-4 col-md-6 mb-4 categoria-producto" data-categoria="Dormitorio">
-            <div class="card h-100">
-              <div class="badge oferta">Oferta</div>
-              <img class="card-img-top" src="../multmedia/images/producto19.jpg" alt="Producto 1">
-              <div class="card-body">
-                <h4 class="card-title">Sommier Venice1</h4>
-                <h5>$99.99</h5>
-                <p class="card-text">Categoría: Living</p>
-                <p class="card-text">Subcategoría: Sofás</p>
-                <button class="btn btn-primary btn-agregar-carrito btn-custom">Agregar al carrito</button>
-              </div>
-            </div>
-          </div>
-          <div class="col-lg-4 col-md-6 mb-4 categoria-producto" data-categoria="Jardín">
-            <div class="card h-100">
-              <div class="badge oferta">Oferta</div>
-              <img class="card-img-top" src="../multmedia/images/producto20.jpg" alt="Producto 1">
-              <div class="card-body">
-                <h4 class="card-title">Poltronas Arena</h4>
-                <h5>$99.99</h5>
-                <p class="card-text">Categoría: Living</p>
-                <p class="card-text">Subcategoría: Sofás</p>
-                <button class="btn btn-primary btn-agregar-carrito btn-custom">Agregar al carrito</button>
-              </div>
-            </div>
-          </div>
-          <div class="col-lg-4 col-md-6 mb-4 categoria-producto" data-categoria="Dormitorio">
-            <div class="card h-100">
-              <div class="badge oferta">Oferta</div>
-              <img class="card-img-top" src="../multmedia/images/producto1.jpg" alt="Producto 1">
-              <div class="card-body">
-                <h4 class="card-title">Placard cedro</h4>
-                <h5>$99.99</h5>
-                <p class="card-text">Categoría: Living</p>
-                <p class="card-text">Subcategoría: Sofás</p>
-                <button class="btn btn-primary btn-agregar-carrito btn-custom">Agregar al carrito</button>
-              </div>
-            </div>
-          </div>
-          <div class="col-lg-4 col-md-6 mb-4 categoria-producto" data-categoria="Dormitorio">
-            <div class="card h-100">
-              <div class="badge oferta">Oferta</div>
-              <img class="card-img-top" src="../multmedia/images/producto2.jpg" alt="Producto 1">
-              <div class="card-body">
-                <h4 class="card-title">Sommier luna</h4>
-                <h5>$99.99</h5>
-                <p class="card-text">Categoría: Living</p>
-                <p class="card-text">Subcategoría: Sofás</p>
-                <button class="btn btn-primary btn-agregar-carrito btn-custom">Agregar al carrito</button>
-              </div>
-            </div>
-          </div>
-          <div class="col-lg-4 col-md-6 mb-4 categoria-producto" data-categoria="Comedor">
-            <div class="card h-100">
-              <div class="badge oferta">Oferta</div>
-              <img class="card-img-top" src="../multmedia/images/producto3.jpg" alt="Producto 1">
-              <div class="card-body">
-                <h4 class="card-title">Comedor Astra</h4>
-                <h5>$99.99</h5>
-                <p class="card-text">Categoría: Living</p>
-                <p class="card-text">Subcategoría: Sofás</p>
-                <button class="btn btn-primary btn-agregar-carrito btn-custom">Agregar al carrito</button>
-              </div>
-            </div>
-          </div>
-          <div class="col-lg-4 col-md-6 mb-4 categoria-producto" data-categoria="Living">
-            <div class="card h-100">
-              <div class="badge oferta">Oferta</div>
-              <img class="card-img-top" src="../multmedia/images/producto4.jpg" alt="Producto 1">
-              <div class="card-body">
-                <h4 class="card-title">Sillón Baleno</h4>
-                <h5>$99.99</h5>
-                <p class="card-text">Categoría: Living</p>
-                <p class="card-text">Subcategoría: Sofás</p>
-                <button class="btn btn-primary btn-agregar-carrito btn-custom">Agregar al carrito</button>
-              </div>
-            </div>
-          </div>
-          <div class="col-lg-4 col-md-6 mb-4 categoria-producto" data-categoria="Dormitorio">
-            <div class="card h-100">
-              <div class="badge oferta">Oferta</div>
-              <img class="card-img-top" src="../multmedia/images/producto5.jpg" alt="Producto 1">
-              <div class="card-body">
-                <h4 class="card-title">Cama infantil marinera</h4>
-                <h5>$99.99</h5>
-                <p class="card-text">Categoría: Living</p>
-                <p class="card-text">Subcategoría: Sofás</p>
-                <button class="btn btn-primary btn-agregar-carrito btn-custom">Agregar al carrito</button>
-              </div>
-            </div>
-          </div>
-          <div class="col-lg-4 col-md-6 mb-4 categoria-producto" data-categoria="Living">
-            <div class="card h-100">
-              <div class="badge oferta">Oferta</div>
-              <img class="card-img-top" src="../multmedia/images/producto6.jpg" alt="Producto 1">
-              <div class="card-body">
-                <h4 class="card-title">Producto 1</h4>
-                <h5>$99.99</h5>
-                <p class="card-text">Categoría: Living</p>
-                <p class="card-text">Subcategoría: Sofás</p>
-                <button class="btn btn-primary btn-agregar-carrito btn-custom">Agregar al carrito</button>
-              </div>
-            </div>
-          </div>
-          <div class="col-lg-4 col-md-6 mb-4 categoria-producto" data-categoria="Living">
-            <div class="card h-100">
-              <div class="badge oferta">Oferta</div>
-              <img class="card-img-top" src="../multmedia/images/producto8.jpg" alt="Producto 1">
-              <div class="card-body">
-                <h4 class="card-title">Producto 1</h4>
-                <h5>$99.99</h5>
-                <p class="card-text">Categoría: Living</p>
-                <p class="card-text">Subcategoría: Sofás</p>
-                <button class="btn btn-primary btn-agregar-carrito btn-custom">Agregar al carrito</button>
-              </div>
-            </div>
-          </div>
-          <div class="col-lg-4 col-md-6 mb-4 categoria-producto" data-categoria="Living">
-            <div class="card h-100">
-              <div class="badge oferta">Oferta</div>
-              <img class="card-img-top" src="../multmedia/images/producto9.jpg" alt="Producto 1">
-              <div class="card-body">
-                <h4 class="card-title">Producto 1</h4>
-                <h5>$99.99</h5>
-                <p class="card-text">Categoría: Living</p>
-                <p class="card-text">Subcategoría: Sofás</p>
-                <button class="btn btn-primary btn-agregar-carrito btn-custom">Agregar al carrito</button>
-              </div>
-            </div>
-          </div>
-          <div class="col-lg-4 col-md-6 mb-4 categoria-producto" data-categoria="Living">
-            <div class="card h-100">
-              <div class="badge oferta">Oferta</div>
-              <img class="card-img-top" src="../multmedia/images/producto10.jpg" alt="Producto 1">
-              <div class="card-body">
-                <h4 class="card-title">Producto 1</h4>
-                <h5>$99.99</h5>
-                <p class="card-text">Categoría: Living</p>
-                <p class="card-text">Subcategoría: Sofás</p>
-                <button class="btn btn-primary btn-agregar-carrito btn-custom">Agregar al carrito</button>
-              </div>
-            </div>
-          </div>
-          <div class="col-lg-4 col-md-6 mb-4 categoria-producto" data-categoria="Living">
-            <div class="card h-100">
-              <div class="badge oferta">Oferta</div>
-              <img class="card-img-top" src="../multmedia/images/producto21.jpg" alt="Producto 1">
-              <div class="card-body">
-                <h4 class="card-title">Producto 1</h4>
-                <h5>$99.99</h5>
-                <p class="card-text">Categoría: Living</p>
-                <p class="card-text">Subcategoría: Sofás</p>
-                <button class="btn btn-primary btn-agregar-carrito btn-custom">Agregar al carrito</button>
-              </div>
-            </div>
-          </div>
-          <div class="col-lg-4 col-md-6 mb-4 categoria-producto" data-categoria="Living">
-            <div class="card h-100">
-              <div class="badge oferta">Oferta</div>
-              <img class="card-img-top" src="../multmedia/images/producto22.jpg" alt="Producto 1">
-              <div class="card-body">
-                <h4 class="card-title">Producto 1</h4>
-                <h5>$99.99</h5>
-                <p class="card-text">Categoría: Living</p>
-                <p class="card-text">Subcategoría: Sofás</p>
-                <button class="btn btn-primary btn-agregar-carrito btn-custom">Agregar al carrito</button>
-              </div>
-            </div>
-          </div>
-          <div class="col-lg-4 col-md-6 mb-4 categoria-producto" data-categoria="Living">
-            <div class="card h-100">
-              <div class="badge oferta">Oferta</div>
-              <img class="card-img-top" src="../multmedia/images/producto23.jpg" alt="Producto 1">
-              <div class="card-body">
-                <h4 class="card-title">Producto 1</h4>
-                <h5>$99.99</h5>
-                <p class="card-text">Categoría: Living</p>
-                <p class="card-text">Subcategoría: Sofás</p>
-                <button class="btn btn-primary btn-agregar-carrito btn-custom">Agregar al carrito</button>
-              </div>
-            </div>
-          </div>
-          <div class="col-lg-4 col-md-6 mb-4 categoria-producto" data-categoria="Living">
-            <div class="card h-100">
-              <div class="badge oferta">Oferta</div>
-              <img class="card-img-top" src="../multmedia/images/producto24.jpg" alt="Producto 1">
-              <div class="card-body">
-                <h4 class="card-title">Producto 1</h4>
-                <h5>$99.99</h5>
-                <p class="card-text">Categoría: Living</p>
-                <p class="card-text">Subcategoría: Sofás</p>
-                <button class="btn btn-primary btn-agregar-carrito btn-custom">Agregar al carrito</button>
-              </div>
-            </div>
-          </div>
-          <div class="col-lg-4 col-md-6 mb-4 categoria-producto" data-categoria="Living">
-            <div class="card h-100">
-              <div class="badge oferta">Oferta</div>
-              <img class="card-img-top" src="../multmedia/images/producto25.jpg" alt="Producto 1">
-              <div class="card-body">
-                <h4 class="card-title">Producto 1</h4>
-                <h5>$99.99</h5>
-                <p class="card-text">Categoría: Living</p>
-                <p class="card-text">Subcategoría: Sofás</p>
-                <button class="btn btn-primary btn-agregar-carrito btn-custom">Agregar al carrito</button>
-              </div>
-            </div>
-          </div>
-          <div class="col-lg-4 col-md-6 mb-4 categoria-producto" data-categoria="Living">
-            <div class="card h-100">
-              <div class="badge oferta">Oferta</div>
-              <img class="card-img-top" src="../multmedia/images/producto26.jpg" alt="Producto 1">
-              <div class="card-body">
-                <h4 class="card-title">Producto 1</h4>
-                <h5>$99.99</h5>
-                <p class="card-text">Categoría: Living</p>
-                <p class="card-text">Subcategoría: Sofás</p>
-                <button class="btn btn-primary btn-agregar-carrito btn-custom">Agregar al carrito</button>
-              </div>
-            </div>
-          </div>
-          <div class="col-lg-4 col-md-6 mb-4 categoria-producto" data-categoria="Living">
-            <div class="card h-100">
-              <div class="badge oferta">Oferta</div>
-              <img class="card-img-top" src="../multmedia/images/producto27.jpg" alt="Producto 1">
-              <div class="card-body">
-                <h4 class="card-title">Producto 1</h4>
-                <h5>$99.99</h5>
-                <p class="card-text">Categoría: Living</p>
-                <p class="card-text">Subcategoría: Sofás</p>
-                <button class="btn btn-primary btn-agregar-carrito btn-custom">Agregar al carrito</button>
-              </div>
-            </div>
-          </div>
-          <div class="col-lg-4 col-md-6 mb-4 categoria-producto" data-categoria="Living">
-            <div class="card h-100">
-              <div class="badge oferta">Oferta</div>
-              <img class="card-img-top" src="../multmedia/images/producto28.jpg" alt="Producto 1">
-              <div class="card-body">
-                <h4 class="card-title">Producto 1</h4>
-                <h5>$99.99</h5>
-                <p class="card-text">Categoría: Living</p>
-                <p class="card-text">Subcategoría: Sofás</p>
-                <button class="btn btn-primary btn-agregar-carrito btn-custom">Agregar al carrito</button>
-              </div>
-            </div>
-          </div>
-          <div class="col-lg-4 col-md-6 mb-4 categoria-producto" data-categoria="Living">
-            <div class="card h-100">
-              <div class="badge oferta">Oferta</div>
-              <img class="card-img-top" src="../multmedia/images/producto29.jpg" alt="Producto 1">
-              <div class="card-body">
-                <h4 class="card-title">Producto 1</h4>
-                <h5>$99.99</h5>
-                <p class="card-text">Categoría: Living</p>
-                <p class="card-text">Subcategoría: Sofás</p>
-                <button class="btn btn-primary btn-agregar-carrito btn-custom">Agregar al carrito</button>
-              </div>
-            </div>
-          </div>
-          <div class="col-lg-4 col-md-6 mb-4 categoria-producto" data-categoria="Living">
-            <div class="card h-100">
-              <div class="badge oferta">Oferta</div>
-              <img class="card-img-top" src="../multmedia/images/producto30.jpg" alt="Producto 1">
-              <div class="card-body">
-                <h4 class="card-title">Producto 1</h4>
-                <h5>$99.99</h5>
-                <p class="card-text">Categoría: Living</p>
-                <p class="card-text">Subcategoría: Sofás</p>
-                <button class="btn btn-primary btn-agregar-carrito btn-custom">Agregar al carrito</button>
-              </div>
-            </div>
-          </div>
-          <div class="col-lg-4 col-md-6 mb-4 categoria-producto" data-categoria="Living">
-            <div class="card h-100">
-              <div class="badge oferta">Oferta</div>
-              <img class="card-img-top" src="../multmedia/images/producto31.jpg" alt="Producto 1">
-              <div class="card-body">
-                <h4 class="card-title">Producto 1</h4>
-                <h5>$99.99</h5>
-                <p class="card-text">Categoría: Living</p>
-                <p class="card-text">Subcategoría: Sofás</p>
-                <button class="btn btn-primary btn-agregar-carrito btn-custom">Agregar al carrito</button>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-    
     <div class="container">
       <div class="row">
-        <div class="col text-center">
-          <p class="mb-0">Página 1 de 3</p>
+        <div class="col-lg-2 col-md-3">
+          <div class="categorias sticky-top">
+            <h2>Categorías</h2>
+            <div class="mb-3">
+              <label for="categoria-select" class="form-label">Categoría:</label>
+              <select id="categoria-select" class="form-select" onchange="mostrarProductos()">
+                <option value="">Seleccione una opción</option>
+                <option value="Living">Living</option>
+                <option value="Dormitorio">Dormitorio</option>
+                <option value="Comedor">Comedor</option>
+                <option value="Oficina">Oficina</option>
+                <option value="Jardín">Jardín</option>
+              </select>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-10 col-md-9" id="productos-container">
+          <div class="row">
+            <div class="col-lg-4 col-md-6">
+              <div class="producto bg-gris-claro" data-subcategoria="Comedor">
+                <div class="producto-img"
+                  data-bs-toggle="modal"
+                  data-bs-target="#productoModal"
+                  data-producto-info='{"nombre": "Juego de comedor alba", "imagen": "..//multmedia/images/comedor/1.jpg", "descripcion": "Juego de comedor, mesa de mármol, 4 sillas", "precio": "149.99", "detalles": "Mesa + 4 sillas"}'>
+                  <img src="..//multmedia/images/comedor/1.jpg" alt="Producto 1" class="img-fluid">
+                </div>
+                <div class="producto-info">
+                  <h3>Juego de comedor alba</h3>
+                  <p class="producto-precio">Precio: $199.99</p>
+                  <p class="producto-subcategoria">Subcategoría: Comedor</p>
+                  <button class="btn btn-primary btn-agregar-carrito btn-custom">Agregar al carrito</button>
+                </div>
+              </div>
+            </div>   
+            <div class="col-lg-4 col-md-6">
+              <div class="producto bg-gris-claro" data-subcategoria="Comedor">
+                <div class="producto-img"
+                  data-bs-toggle="modal"
+                  data-bs-target="#productoModal"
+                  data-producto-info='{"nombre": "Juego de comedor allie", "imagen": "..//multmedia/images/comedor/2.jpg", "descripcion": "Juego de comedor, mesa de viderio, 4 sillas", "precio": "149.99", "detalles": "Mesa + 4 sillas"}'>
+                  <img src="..//multmedia/images/comedor/2.jpg" alt="Producto 1" class="img-fluid">
+                </div>
+                <div class="producto-info">
+                  <h3>Juego de comedor allie</h3>
+                  <p class="producto-precio">Precio: $199.99</p>
+                  <p class="producto-subcategoria">Subcategoría: Comedor</p>
+                  <button class="btn btn-primary btn-agregar-carrito btn-custom">Agregar al carrito</button>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-4 col-md-6">
+              <div class="producto bg-gris-claro" data-subcategoria="Comedor">
+                <div class="producto-img"
+                  data-bs-toggle="modal"
+                  data-bs-target="#productoModal"
+                  data-producto-info='{"nombre": "Silla Ibérica", "imagen": "..//multmedia/images/comedor/3.jpg", "descripcion": "Silla de comedor", "precio": "149.99", "detalles": "Silla forrada"}'>
+                  <img src="..//multmedia/images/comedor/3.jpg" alt="Producto 1" class="img-fluid">
+                </div>
+                <div class="producto-info">
+                  <h3>Silla Ibérica</h3>
+                  <p class="producto-precio">Precio: $199.99</p>
+                  <p class="producto-subcategoria">Subcategoría: Comedor</p>
+                  <button class="btn btn-primary btn-agregar-carrito btn-custom">Agregar al carrito</button>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-4 col-md-6">
+              <div class="producto bg-gris-claro" data-subcategoria="Comedor">
+                <div class="producto-img"
+                  data-bs-toggle="modal"
+                  data-bs-target="#productoModal"
+                  data-producto-info='{"nombre": "Silla Nostra", "imagen": "..//multmedia/images/comedor/4.jpg", "descripcion": "Silla de comedor", "precio": "149.99", "detalles": "Silla forrada"}'>
+                  <img src="..//multmedia/images/comedor/4.jpg" alt="Producto 1" class="img-fluid">
+                </div>
+                <div class="producto-info">
+                  <h3>Silla Nostra</h3>
+                  <p class="producto-precio">Precio: $199.99</p>
+                  <p class="producto-subcategoria">Subcategoría: Comedor</p>
+                  <button class="btn btn-primary btn-agregar-carrito btn-custom">Agregar al carrito</button>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-4 col-md-6">
+              <div class="producto bg-gris-claro" data-subcategoria="Comedor">
+                <div class="producto-img"
+                  data-bs-toggle="modal"
+                  data-bs-target="#productoModal"
+                  data-producto-info='{"nombre": "Silla Nero", "imagen": "..//multmedia/images/comedor/5.jpg", "descripcion": "Silla de comedor", "precio": "149.99", "detalles": "Silla forrada"}'>
+                  <img src="..//multmedia/images/comedor/5.jpg" alt="Producto 1" class="img-fluid">
+                </div>
+                <div class="producto-info">
+                  <h3>Silla Nero</h3>
+                  <p class="producto-precio">Precio: $199.99</p>
+                  <p class="producto-subcategoria">Subcategoría: Comedor</p>
+                  <button class="btn btn-primary btn-agregar-carrito btn-custom">Agregar al carrito</button>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-4 col-md-6">
+              <div class="producto bg-gris-claro" data-subcategoria="Comedor">
+                <div class="producto-img"
+                  data-bs-toggle="modal"
+                  data-bs-target="#productoModal"
+                  data-producto-info='{"nombre": "Silla alfa", "imagen": "..//multmedia/images/comedor/6.jpg", "descripcion": "Silla de comedor", "precio": "149.99", "detalles": "Silla mimbre"}'>
+                  <img src="..//multmedia/images/comedor/6.jpg" alt="Producto 1" class="img-fluid">
+                </div>
+                <div class="producto-info">
+                  <h3>Silla alfa</h3>
+                  <p class="producto-precio">Precio: $199.99</p>
+                  <p class="producto-subcategoria">Subcategoría: Comedor</p>
+                  <button class="btn btn-primary btn-agregar-carrito btn-custom">Agregar al carrito</button>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-4 col-md-6">
+              <div class="producto bg-gris-claro" data-subcategoria="Comedor">
+                <div class="producto-img"
+                  data-bs-toggle="modal"
+                  data-bs-target="#productoModal"
+                  data-producto-info='{"nombre": "Silla ardo", "imagen": "..//multmedia/images/comedor/7.jpg", "descripcion": "Silla de comedor", "precio": "149.99", "detalles": "Silla mimbre"}'>
+                  <img src="..//multmedia/images/comedor/7.jpg" alt="Producto 1" class="img-fluid">
+                </div>
+                <div class="producto-info">
+                  <h3>Silla ardo</h3>
+                  <p class="producto-precio">Precio: $199.99</p>
+                  <p class="producto-subcategoria">Subcategoría: Comedor</p>
+                  <button class="btn btn-primary btn-agregar-carrito btn-custom">Agregar al carrito</button>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-4 col-md-6">
+              <div class="producto bg-gris-claro" data-subcategoria="Comedor">
+                <div class="producto-img"
+                  data-bs-toggle="modal"
+                  data-bs-target="#productoModal"
+                  data-producto-info='{"nombre": "Silla aldo", "imagen": "..//multmedia/images/comedor/8.jpg", "descripcion": "Silla de comedor", "precio": "149.99", "detalles": "Silla forrada"}'>
+                  <img src="..//multmedia/images/comedor/8.jpg" alt="Producto 1" class="img-fluid">
+                </div>
+                <div class="producto-info">
+                  <h3>Silla aldo</h3>
+                  <p class="producto-precio">Precio: $199.99</p>
+                  <p class="producto-subcategoria">Subcategoría: Comedor</p>
+                  <button class="btn btn-primary btn-agregar-carrito btn-custom">Agregar al carrito</button>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-4 col-md-6">
+              <div class="producto bg-gris-claro" data-subcategoria="Comedor">
+                <div class="producto-img"
+                  data-bs-toggle="modal"
+                  data-bs-target="#productoModal"
+                  data-producto-info='{"nombre": "Comedor almo", "imagen": "..//multmedia/images/comedor/9.jpg", "descripcion": "Juego de comedor, mesa en vidrio, 4 sillas", "precio": "149.99", "detalles": "Mesa + 4 sillas"}'>
+                  <img src="..//multmedia/images/comedor/9.jpg" alt="Producto 1" class="img-fluid">
+                </div>
+                <div class="producto-info">
+                  <h3>Comedor almo</h3>
+                  <p class="producto-precio">Precio: $199.99</p>
+                  <p class="producto-subcategoria">Subcategoría: Comedor</p>
+                  <button class="btn btn-primary btn-agregar-carrito btn-custom">Agregar al carrito</button>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-4 col-md-6">
+              <div class="producto bg-gris-claro" data-subcategoria="Comedor">
+                <div class="producto-img"
+                  data-bs-toggle="modal"
+                  data-bs-target="#productoModal"
+                  data-producto-info='{"nombre": "Silla mero", "imagen": "..//multmedia/images/comedor/10.jpg", "descripcion": "Silla de comedor", "precio": "149.99", "detalles": "Silla forrada"}'>
+                  <img src="..//multmedia/images/comedor/10.jpg" alt="Producto 1" class="img-fluid">
+                </div>
+                <div class="producto-info">
+                  <h3>Silla mero</h3>
+                  <p class="producto-precio">Precio: $199.99</p>
+                  <p class="producto-subcategoria">Subcategoría: Comedor</p>
+                  <button class="btn btn-primary btn-agregar-carrito btn-custom">Agregar al carrito</button>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-4 col-md-6">
+              <div class="producto bg-gris-claro" data-subcategoria="Comedor">
+                <div class="producto-img"
+                  data-bs-toggle="modal"
+                  data-bs-target="#productoModal"
+                  data-producto-info='{"nombre": "Silla net", "imagen": "..//multmedia/images/comedor/11.jpg", "descripcion": "Silla de comedor", "precio": "149.99", "detalles": "Silla forrada"}'>
+                  <img src="..//multmedia/images/comedor/11.jpg" alt="Producto 1" class="img-fluid">
+                </div>
+                <div class="producto-info">
+                  <h3>Silla net</h3>
+                  <p class="producto-precio">Precio: $199.99</p>
+                  <p class="producto-subcategoria">Subcategoría: Comedor</p>
+                  <button class="btn btn-primary btn-agregar-carrito btn-custom">Agregar al carrito</button>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-4 col-md-6">
+              <div class="producto bg-gris-claro" data-subcategoria="Comedor">
+                <div class="producto-img"
+                  data-bs-toggle="modal"
+                  data-bs-target="#productoModal"
+                  data-producto-info='{"nombre": "Mesa Aplina", "imagen": "..//multmedia/images/comedor/12.jpg", "descripcion": "Mesa comedor", "precio": "149.99", "detalles": "Mesa de pino"}'>
+                  <img src="..//multmedia/images/comedor/12.jpg" alt="Producto 1" class="img-fluid">
+                </div>
+                <div class="producto-info">
+                  <h3>Mesa Aplina</h3>
+                  <p class="producto-precio">Precio: $199.99</p>
+                  <p class="producto-subcategoria">Subcategoría: Comedor</p>
+                  <button class="btn btn-primary btn-agregar-carrito btn-custom">Agregar al carrito</button>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-4 col-md-6">
+              <div class="producto bg-gris-claro" data-subcategoria="Comedor">
+                <div class="producto-img"
+                  data-bs-toggle="modal"
+                  data-bs-target="#productoModal"
+                  data-producto-info='{"nombre": "Comedor astra", "imagen": "..//multmedia/images/comedor/13.jpg", "descripcion": "Juego de comedor 4 sillas", "precio": "149.99", "detalles": "Mesa vidrio + 4 sillas"}'>
+                  <img src="..//multmedia/images/comedor/13.jpg" alt="Producto 1" class="img-fluid">
+                </div>
+                <div class="producto-info">
+                  <h3>Comedor astra</h3>
+                  <p class="producto-precio">Precio: $199.99</p>
+                  <p class="producto-subcategoria">Subcategoría: Comedor</p>
+                  <button class="btn btn-primary btn-agregar-carrito btn-custom">Agregar al carrito</button>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-4 col-md-6">
+              <div class="producto bg-gris-claro" data-subcategoria="Comedor">
+                <div class="producto-img"
+                  data-bs-toggle="modal"
+                  data-bs-target="#productoModal"
+                  data-producto-info='{"nombre": "Mesa euca", "imagen": "..//multmedia/images/comedor/14.jpg", "descripcion": "Mesa de comedor", "precio": "149.99", "detalles": "Mesa de eucaliptus"}'>
+                  <img src="..//multmedia/images/comedor/14.jpg" alt="Producto 1" class="img-fluid">
+                </div>
+                <div class="producto-info">
+                  <h3>Mesa euca</h3>
+                  <p class="producto-precio">Precio: $199.99</p>
+                  <p class="producto-subcategoria">Subcategoría: Comedor</p>
+                  <button class="btn btn-primary btn-agregar-carrito btn-custom">Agregar al carrito</button>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-4 col-md-6">
+              <div class="producto bg-gris-claro" data-subcategoria="Comedor">
+                <div class="producto-img"
+                  data-bs-toggle="modal"
+                  data-bs-target="#productoModal"
+                  data-producto-info='{"nombre": "Comedor ronda", "imagen": "..//multmedia/images/comedor/15.jpg", "descripcion": "Juego de comedor", "precio": "149.99", "detalles": "Mesa + 4 sillas"}'>
+                  <img src="..//multmedia/images/comedor/15.jpg" alt="Producto 1" class="img-fluid">
+                </div>
+                <div class="producto-info">
+                  <h3>Comedor ronda</h3>
+                  <p class="producto-precio">Precio: $199.99</p>
+                  <p class="producto-subcategoria">Subcategoría: Comedor</p>
+                  <button class="btn btn-primary btn-agregar-carrito btn-custom">Agregar al carrito</button>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-4 col-md-6">
+              <div class="producto bg-gris-claro" data-subcategoria="Comedor">
+                <div class="producto-img"
+                  data-bs-toggle="modal"
+                  data-bs-target="#productoModal"
+                  data-producto-info='{"nombre": "Cristalero deno", "imagen": "..//multmedia/images/comedor/16.jpg", "descripcion": "Cristalero", "precio": "149.99", "detalles": "Cristalero en mdf"}'>
+                  <img src="..//multmedia/images/comedor/16.jpg" alt="Producto 1" class="img-fluid">
+                </div>
+                <div class="producto-info">
+                  <h3>Cristalero deno</h3>
+                  <p class="producto-precio">Precio: $199.99</p>
+                  <p class="producto-subcategoria">Subcategoría: Comedor</p>
+                  <button class="btn btn-primary btn-agregar-carrito btn-custom">Agregar al carrito</button>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-4 col-md-6">
+              <div class="producto bg-gris-claro" data-subcategoria="Comedor">
+                <div class="producto-img"
+                  data-bs-toggle="modal"
+                  data-bs-target="#productoModal"
+                  data-producto-info='{"nombre": "Cristalero rogue", "imagen": "..//multmedia/images/comedor/17.jpg", "descripcion": "Cristalero", "precio": "149.99", "detalles": "Cristalero en mdf"}'>
+                  <img src="..//multmedia/images/comedor/17.jpg" alt="Producto 1" class="img-fluid">
+                </div>
+                <div class="producto-info">
+                  <h3>Cristalero rogue</h3>
+                  <p class="producto-precio">Precio: $199.99</p>
+                  <p class="producto-subcategoria">Subcategoría: Comedor</p>
+                  <button class="btn btn-primary btn-agregar-carrito btn-custom">Agregar al carrito</button>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-4 col-md-6">
+              <div class="producto bg-gris-claro" data-subcategoria="Comedor">
+                <div class="producto-img"
+                  data-bs-toggle="modal"
+                  data-bs-target="#productoModal"
+                  data-producto-info='{"nombre": "cristaleroEleganteVitrina", "imagen": "..//multmedia/images/comedor/18.jpg", "descripcion": "Cristalero elegante con función de vitrina.", "precio": "149.99", "detalles": "Puertas de vidrio y estantes iluminados."}'>
+                  <img src="..//multmedia/images/comedor/18.jpg" alt="Producto 1" class="img-fluid">
+                </div>
+                <div class="producto-info">
+                  <h3>cristaleroEleganteVitrina</h3>
+                  <p class="producto-precio">Precio: $199.99</p>
+                  <p class="producto-subcategoria">Subcategoría: Comedor</p>
+                  <button class="btn btn-primary btn-agregar-carrito btn-custom">Agregar al carrito</button>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-4 col-md-6">
+              <div class="producto bg-gris-claro" data-subcategoria="Comedor">
+                <div class="producto-img"
+                  data-bs-toggle="modal"
+                  data-bs-target="#productoModal"
+                  data-producto-info='{"nombre": "mesaModernaMinimalista", "imagen": "..//multmedia/images/comedor/19.jpg", "descripcion": "Mesa de diseño moderno y minimalista.", "precio": "149.99", "detalles": "Líneas limpias y acabado lacado."}'>
+                  <img src="..//multmedia/images/comedor/19.jpg" alt="Producto 1" class="img-fluid">
+                </div>
+                <div class="producto-info">
+                  <h3>MesaModernaMinimalista</h3>
+                  <p class="producto-precio">Precio: $199.99</p>
+                  <p class="producto-subcategoria">Subcategoría: Comedor</p>
+                  <button class="btn btn-primary btn-agregar-carrito btn-custom">Agregar al carrito</button>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-4 col-md-6">
+              <div class="producto bg-gris-claro" data-subcategoria="Comedor">
+                <div class="producto-img"
+                  data-bs-toggle="modal"
+                  data-bs-target="#productoModal"
+                  data-producto-info='{"nombre": "cristaleroEstiloVintage", "imagen": "..//multmedia/images/comedor/20.jpg", "descripcion": "Cristalero de estilo vintage con detalles ornamentados.", "precio": "149.99", "detalles": "Madera tallada a mano y acabado envejecido."}'>
+                  <img src="..//multmedia/images/comedor/20.jpg" alt="Producto 1" class="img-fluid">
+                </div>
+                <div class="producto-info">
+                  <h3>cristaleroEstiloVintage</h3>
+                  <p class="producto-precio">Precio: $199.99</p>
+                  <p class="producto-subcategoria">Subcategoría: Comedor</p>
+                  <button class="btn btn-primary btn-agregar-carrito btn-custom">Agregar al carrito</button>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-4 col-md-6">
+              <div class="producto bg-gris-claro" data-subcategoria="Comedor">
+                <div class="producto-img"
+                  data-bs-toggle="modal"
+                  data-bs-target="#productoModal"
+                  data-producto-info='{"nombre": "cristaleroContemporaneoModerno", "imagen": "..//multmedia/images/comedor/21.jpg", "descripcion": "Cristalero contemporáneo de aspecto moderno.", "precio": "149.99", "detalles": "Líneas geométricas y sistema de iluminación LED."}'>
+                  <img src="..//multmedia/images/comedor/21.jpg" alt="Producto 1" class="img-fluid">
+                </div>
+                <div class="producto-info">
+                  <h3>cristaleroContemporaneoModerno</h3>
+                  <p class="producto-precio">Precio: $199.99</p>
+                  <p class="producto-subcategoria">Subcategoría: Comedor</p>
+                  <button class="btn btn-primary btn-agregar-carrito btn-custom">Agregar al carrito</button>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-4 col-md-6">
+              <div class="producto bg-gris-claro" data-subcategoria="Dormitorio">
+                <div class="producto-img"
+                  data-bs-toggle="modal"
+                  data-bs-target="#productoModal"
+                  data-producto-info='{"nombre": "roperoEstiloVintage", "imagen": "..//multmedia/images/dormitorio/1.jpg", "descripcion": "Ropero de estilo vintage con detalles tallados.", "precio": "149.99", "detalles": "Madera maciza y acabado en tono nogal."}'>
+                  <img src="..//multmedia/images/dormitorio/1.jpg" alt="Producto 1" class="img-fluid">
+                </div>
+                <div class="producto-info">
+                  <h3>roperoEstiloVintage</h3>
+                  <p class="producto-precio">Precio: $199.99</p>
+                  <p class="producto-subcategoria">Subcategoría: Dormitorio</p>
+                  <button class="btn btn-primary btn-agregar-carrito btn-custom">Agregar al carrito</button>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-4 col-md-6">
+              <div class="producto bg-gris-claro" data-subcategoria="Dormitorio">
+                <div class="producto-img"
+                  data-bs-toggle="modal"
+                  data-bs-target="#productoModal"
+                  data-producto-info='{"nombre": "camaPlataformaMinimalista", "imagen": "..//multmedia/images/dormitorio/2.jpg", "descripcion": "Cama plataforma de diseño minimalista.", "precio": "149.99", "detalles": "Sin cabecero y espacio de almacenamiento debajo."}'>
+                  <img src="..//multmedia/images/dormitorio/2.jpg" alt="Producto 1" class="img-fluid">
+                </div>
+                <div class="producto-info">
+                  <h3>camaPlataformaMinimalista</h3>
+                  <p class="producto-precio">Precio: $199.99</p>
+                  <p class="producto-subcategoria">Subcategoría: Dormitorio</p>
+                  <button class="btn btn-primary btn-agregar-carrito btn-custom">Agregar al carrito</button>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-4 col-md-6">
+              <div class="producto bg-gris-claro" data-subcategoria="Dormitorio">
+                <div class="producto-img"
+                  data-bs-toggle="modal"
+                  data-bs-target="#productoModal"
+                  data-producto-info='{"nombre": "roperoEspacioOrganizado", "imagen": "..//multmedia/images/dormitorio/3.jpg", "descripcion": "Ropero diseñado para mantener tu espacio organizado.", "precio": "149.99", "detalles": "Estantes ajustables y barras para colgar."}'>
+                  <img src="..//multmedia/images/dormitorio/3.jpg" alt="Producto 1" class="img-fluid">
+                </div>
+                <div class="producto-info">
+                  <h3>roperoEspacioOrganizado</h3>
+                  <p class="producto-precio">Precio: $199.99</p>
+                  <p class="producto-subcategoria">Subcategoría: Dormitorio</p>
+                  <button class="btn btn-primary btn-agregar-carrito btn-custom">Agregar al carrito</button>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-4 col-md-6">
+              <div class="producto bg-gris-claro" data-subcategoria="Dormitorio">
+                <div class="producto-img"
+                  data-bs-toggle="modal"
+                  data-bs-target="#productoModal"
+                  data-producto-info='{"nombre": "camaElegante", "imagen": "..//multmedia/images/dormitorio/4.jpg", "descripcion": "Descripción del producto 2", "precio": "149.99", "detalles": "Detalles del producto 2"}'>
+                  <img src="..//multmedia/images/dormitorio/4.jpg" alt="Producto 1" class="img-fluid">
+                </div>
+                <div class="producto-info">
+                  <h3>camaElegante</h3>
+                  <p class="producto-precio">Precio: $199.99</p>
+                  <p class="producto-subcategoria">Subcategoría: Dormitorio</p>
+                  <button class="btn btn-primary btn-agregar-carrito btn-custom">Agregar al carrito</button>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-4 col-md-6">
+              <div class="producto bg-gris-claro" data-subcategoria="Dormitorio">
+                <div class="producto-img"
+                  data-bs-toggle="modal"
+                  data-bs-target="#productoModal"
+                  data-producto-info='{"nombre": "roperoElegante", "imagen": "..//multmedia/images/dormitorio/5.jpg", "descripcion": "Descripción del producto 2", "precio": "149.99", "detalles": "Detalles del producto 2"}'>
+                  <img src="..//multmedia/images/dormitorio/5.jpg" alt="Producto 1" class="img-fluid">
+                </div>
+                <div class="producto-info">
+                  <h3>roperoElegante</h3>
+                  <p class="producto-precio">Precio: $199.99</p>
+                  <p class="producto-subcategoria">Subcategoría: Dormitorio</p>
+                  <button class="btn btn-primary btn-agregar-carrito btn-custom">Agregar al carrito</button>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-4 col-md-6">
+              <div class="producto bg-gris-claro" data-subcategoria="Dormitorio">
+                <div class="producto-img"
+                  data-bs-toggle="modal"
+                  data-bs-target="#productoModal"
+                  data-producto-info='{"nombre": "roperoModerno", "imagen": "..//multmedia/images/dormitorio/6.jpg", "descripcion": "Descripción del producto 2", "precio": "149.99", "detalles": "Detalles del producto 2"}'>
+                  <img src="..//multmedia/images/dormitorio/6.jpg" alt="Producto 1" class="img-fluid">
+                </div>
+                <div class="producto-info">
+                  <h3>roperoModerno</h3>
+                  <p class="producto-precio">Precio: $199.99</p>
+                  <p class="producto-subcategoria">Subcategoría: Dormitorio</p>
+                  <button class="btn btn-primary btn-agregar-carrito btn-custom">Agregar al carrito</button>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-4 col-md-6">
+              <div class="producto bg-gris-claro" data-subcategoria="Dormitorio">
+                <div class="producto-img"
+                  data-bs-toggle="modal"
+                  data-bs-target="#productoModal"
+                  data-producto-info='{"nombre": "camaRusticaMaderaReciclada", "imagen": "..//multmedia/images/dormitorio/7.jpg", "descripcion": "Descripción del producto 2", "precio": "149.99", "detalles": "Detalles del producto 2"}'>
+                  <img src="..//multmedia/images/dormitorio/7.jpg" alt="Producto 1" class="img-fluid">
+                </div>
+                <div class="producto-info">
+                  <h3>camaRusticaMaderaReciclada</h3>
+                  <p class="producto-precio">Precio: $199.99</p>
+                  <p class="producto-subcategoria">Subcategoría: Dormitorio</p>
+                  <button class="btn btn-primary btn-agregar-carrito btn-custom">Agregar al carrito</button>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-4 col-md-6">
+              <div class="producto bg-gris-claro" data-subcategoria="Dormitorio">
+                <div class="producto-img"
+                  data-bs-toggle="modal"
+                  data-bs-target="#productoModal"
+                  data-producto-info='{"nombre": "comodaCincoCajones", "imagen": "..//multmedia/images/dormitorio/8.jpg", "descripcion": "Descripción del producto 2", "precio": "149.99", "detalles": "Detalles del producto 2"}'>
+                  <img src="..//multmedia/images/dormitorio/8.jpg" alt="Producto 1" class="img-fluid">
+                </div>
+                <div class="producto-info">
+                  <h3>comodaCincoCajones</h3>
+                  <p class="producto-precio">Precio: $199.99</p>
+                  <p class="producto-subcategoria">Subcategoría: Dormitorio</p>
+                  <button class="btn btn-primary btn-agregar-carrito btn-custom">Agregar al carrito</button>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-4 col-md-6">
+              <div class="producto bg-gris-claro" data-subcategoria="Dormitorio">
+                <div class="producto-img"
+                  data-bs-toggle="modal"
+                  data-bs-target="#productoModal"
+                  data-producto-info='{"nombre": "comodaVintageElegante", "imagen": "..//multmedia/images/dormitorio/9.jpg", "descripcion": "Descripción del producto 2", "precio": "149.99", "detalles": "Detalles del producto 2"}'>
+                  <img src="..//multmedia/images/dormitorio/9.jpg" alt="Producto 1" class="img-fluid">
+                </div>
+                <div class="producto-info">
+                  <h3>comodaVintageElegante</h3>
+                  <p class="producto-precio">Precio: $199.99</p>
+                  <p class="producto-subcategoria">Subcategoría: Dormitorio</p>
+                  <button class="btn btn-primary btn-agregar-carrito btn-custom">Agregar al carrito</button>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-4 col-md-6">
+              <div class="producto bg-gris-claro" data-subcategoria="Dormitorio">
+                <div class="producto-img"
+                  data-bs-toggle="modal"
+                  data-bs-target="#productoModal"
+                  data-producto-info='{"nombre": "mesitaLuzRustica", "imagen": "..//multmedia/images/dormitorio/10.jpg", "descripcion": "Descripción del producto 2", "precio": "149.99", "detalles": "Detalles del producto 2"}'>
+                  <img src="..//multmedia/images/dormitorio/10.jpg" alt="Producto 1" class="img-fluid">
+                </div>
+                <div class="producto-info">
+                  <h3>mesitaLuzRustica</h3>
+                  <p class="producto-precio">Precio: $199.99</p>
+                  <p class="producto-subcategoria">Subcategoría: Dormitorio</p>
+                  <button class="btn btn-primary btn-agregar-carrito btn-custom">Agregar al carrito</button>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-4 col-md-6">
+              <div class="producto bg-gris-claro" data-subcategoria="Dormitorio">
+                <div class="producto-img"
+                  data-bs-toggle="modal"
+                  data-bs-target="#productoModal"
+                  data-producto-info='{"nombre": "roperoModernoMinimalista", "imagen": "..//multmedia/images/dormitorio/11.jpg", "descripcion": "Descripción del producto 2", "precio": "149.99", "detalles": "Detalles del producto 2"}'>
+                  <img src="..//multmedia/images/dormitorio/11.jpg" alt="Producto 1" class="img-fluid">
+                </div>
+                <div class="producto-info">
+                  <h3>roperoModernoMinimalista</h3>
+                  <p class="producto-precio">Precio: $199.99</p>
+                  <p class="producto-subcategoria">Subcategoría: Dormitorio</p>
+                  <button class="btn btn-primary btn-agregar-carrito btn-custom">Agregar al carrito</button>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-4 col-md-6">
+              <div class="producto bg-gris-claro" data-subcategoria="Dormitorio">
+                <div class="producto-img"
+                  data-bs-toggle="modal"
+                  data-bs-target="#productoModal"
+                  data-producto-info='{"nombre": "Respaldo aurora", "imagen": "..//multmedia/images/dormitorio/12.jpg", "descripcion": "Descripción del producto 2", "precio": "149.99", "detalles": "Detalles del producto 2"}'>
+                  <img src="..//multmedia/images/dormitorio/12.jpg" alt="Producto 1" class="img-fluid">
+                </div>
+                <div class="producto-info">
+                  <h3>Respaldo aurora</h3>
+                  <p class="producto-precio">Precio: $199.99</p>
+                  <p class="producto-subcategoria">Subcategoría: Dormitorio</p>
+                  <button class="btn btn-primary btn-agregar-carrito btn-custom">Agregar al carrito</button>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-4 col-md-6">
+              <div class="producto bg-gris-claro" data-subcategoria="Dormitorio">
+                <div class="producto-img"
+                  data-bs-toggle="modal"
+                  data-bs-target="#productoModal"
+                  data-producto-info='{"nombre": "Ropero alfa", "imagen": "..//multmedia/images/dormitorio/13.jpg", "descripcion": "Descripción del producto 2", "precio": "149.99", "detalles": "Detalles del producto 2"}'>
+                  <img src="..//multmedia/images/dormitorio/13.jpg" alt="Producto 1" class="img-fluid">
+                </div>
+                <div class="producto-info">
+                  <h3>Ropero alfa</h3>
+                  <p class="producto-precio">Precio: $199.99</p>
+                  <p class="producto-subcategoria">Subcategoría: Dormitorio</p>
+                  <button class="btn btn-primary btn-agregar-carrito btn-custom">Agregar al carrito</button>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-4 col-md-6">
+              <div class="producto bg-gris-claro" data-subcategoria="Dormitorio">
+                <div class="producto-img"
+                  data-bs-toggle="modal"
+                  data-bs-target="#productoModal"
+                  data-producto-info='{"nombre": "Ropero nero", "imagen": "..//multmedia/images/dormitorio/14.jpg", "descripcion": "Descripción del producto 2", "precio": "149.99", "detalles": "Detalles del producto 2"}'>
+                  <img src="..//multmedia/images/dormitorio/14.jpg" alt="Producto 1" class="img-fluid">
+                </div>
+                <div class="producto-info">
+                  <h3>Ropero nero</h3>
+                  <p class="producto-precio">Precio: $199.99</p>
+                  <p class="producto-subcategoria">Subcategoría: Dormitorio</p>
+                  <button class="btn btn-primary btn-agregar-carrito btn-custom">Agregar al carrito</button>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-4 col-md-6">
+              <div class="producto bg-gris-claro" data-subcategoria="Dormitorio">
+                <div class="producto-img"
+                  data-bs-toggle="modal"
+                  data-bs-target="#productoModal"
+                  data-producto-info='{"nombre": "Ropero rock", "imagen": "..//multmedia/images/dormitorio/15.jpg", "descripcion": "Descripción del producto 2", "precio": "149.99", "detalles": "Detalles del producto 2"}'>
+                  <img src="..//multmedia/images/dormitorio/15.jpg" alt="Producto 1" class="img-fluid">
+                </div>
+                <div class="producto-info">
+                  <h3>Ropero rock</h3>
+                  <p class="producto-precio">Precio: $199.99</p>
+                  <p class="producto-subcategoria">Subcategoría: Dormitorio</p>
+                  <button class="btn btn-primary btn-agregar-carrito btn-custom">Agregar al carrito</button>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-4 col-md-6">
+              <div class="producto bg-gris-claro" data-subcategoria="Dormitorio">
+                <div class="producto-img"
+                  data-bs-toggle="modal"
+                  data-bs-target="#productoModal"
+                  data-producto-info='{"nombre": "Colchon 1 plaza", "imagen": "..//multmedia/images/dormitorio/16.jpg", "descripcion": "Descripción del producto 2", "precio": "149.99", "detalles": "Detalles del producto 2"}'>
+                  <img src="..//multmedia/images/dormitorio/16.jpg" alt="Producto 1" class="img-fluid">
+                </div>
+                <div class="producto-info">
+                  <h3>Colchon 1 plaza</h3>
+                  <p class="producto-precio">Precio: $199.99</p>
+                  <p class="producto-subcategoria">Subcategoría: Dormitorio</p>
+                  <button class="btn btn-primary btn-agregar-carrito btn-custom">Agregar al carrito</button>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-4 col-md-6">
+              <div class="producto bg-gris-claro" data-subcategoria="Dormitorio">
+                <div class="producto-img"
+                  data-bs-toggle="modal"
+                  data-bs-target="#productoModal"
+                  data-producto-info='{"nombre": "Respaldo pino", "imagen": "..//multmedia/images/dormitorio/17.jpg", "descripcion": "Descripción del producto 2", "precio": "149.99", "detalles": "Detalles del producto 2"}'>
+                  <img src="..//multmedia/images/dormitorio/17.jpg" alt="Producto 1" class="img-fluid">
+                </div>
+                <div class="producto-info">
+                  <h3>Respaldo pino</h3>
+                  <p class="producto-precio">Precio: $199.99</p>
+                  <p class="producto-subcategoria">Subcategoría: Dormitorio</p>
+                  <button class="btn btn-primary btn-agregar-carrito btn-custom">Agregar al carrito</button>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-4 col-md-6">
+              <div class="producto bg-gris-claro" data-subcategoria="Dormitorio">
+                <div class="producto-img"
+                  data-bs-toggle="modal"
+                  data-bs-target="#productoModal"
+                  data-producto-info='{"nombre": "Ropero 2 puertas", "imagen": "..//multmedia/images/dormitorio/18.jpg", "descripcion": "Descripción del producto 2", "precio": "149.99", "detalles": "Detalles del producto 2"}'>
+                  <img src="..//multmedia/images/dormitorio/18.jpg" alt="Producto 1" class="img-fluid">
+                </div>
+                <div class="producto-info">
+                  <h3>Ropero 2 puertas</h3>
+                  <p class="producto-precio">Precio: $199.99</p>
+                  <p class="producto-subcategoria">Subcategoría: Dormitorio</p>
+                  <button class="btn btn-primary btn-agregar-carrito btn-custom">Agregar al carrito</button>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-4 col-md-6">
+              <div class="producto bg-gris-claro" data-subcategoria="Dormitorio">
+                <div class="producto-img"
+                  data-bs-toggle="modal"
+                  data-bs-target="#productoModal"
+                  data-producto-info='{"nombre": "Mesa de luz moderna", "imagen": "..//multmedia/images/dormitorio/19.jpg", "descripcion": "Descripción del producto 2", "precio": "149.99", "detalles": "Detalles del producto 2"}'>
+                  <img src="..//multmedia/images/dormitorio/19.jpg" alt="Producto 1" class="img-fluid">
+                </div>
+                <div class="producto-info">
+                  <h3>Mesa de luz moderna</h3>
+                  <p class="producto-precio">Precio: $199.99</p>
+                  <p class="producto-subcategoria">Subcategoría: Dormitorio</p>
+                  <button class="btn btn-primary btn-agregar-carrito btn-custom">Agregar al carrito</button>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-4 col-md-6">
+              <div class="producto bg-gris-claro" data-subcategoria="Dormitorio">
+                <div class="producto-img"
+                  data-bs-toggle="modal"
+                  data-bs-target="#productoModal"
+                  data-producto-info='{"nombre": "Mesa de luz rústica", "imagen": "..//multmedia/images/dormitorio/20.jpg", "descripcion": "Descripción del producto 2", "precio": "149.99", "detalles": "Detalles del producto 2"}'>
+                  <img src="..//multmedia/images/dormitorio/20.jpg" alt="Producto 1" class="img-fluid">
+                </div>
+                <div class="producto-info">
+                  <h3>Mesa de luz rústica</h3>
+                  <p class="producto-precio">Precio: $199.99</p>
+                  <p class="producto-subcategoria">Subcategoría: Dormitorio</p>
+                  <button class="btn btn-primary btn-agregar-carrito btn-custom">Agregar al carrito</button>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-4 col-md-6">
+              <div class="producto bg-gris-claro" data-subcategoria="Jardín">
+                <div class="producto-img"
+                  data-bs-toggle="modal"
+                  data-bs-target="#productoModal"
+                  data-producto-info='{"nombre": "Sillon alba", "imagen": "..//multmedia/images/jardin/1.jpg", "descripcion": "Descripción del producto 2", "precio": "149.99", "detalles": "Detalles del producto 2"}'>
+                  <img src="..//multmedia/images/jardin/1.jpg" alt="Producto 1" class="img-fluid">
+                </div>
+                <div class="producto-info">
+                  <h3>Sillon alba</h3>
+                  <p class="producto-precio">Precio: $199.99</p>
+                  <p class="producto-subcategoria">Subcategoría: Jardín</p>
+                  <button class="btn btn-primary btn-agregar-carrito btn-custom">Agregar al carrito</button>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-4 col-md-6">
+              <div class="producto bg-gris-claro" data-subcategoria="Jardín">
+                <div class="producto-img"
+                  data-bs-toggle="modal"
+                  data-bs-target="#productoModal"
+                  data-producto-info='{"nombre": "Mesa exterior", "imagen": "..//multmedia/images/jardin/2.jpg", "descripcion": "Descripción del producto 2", "precio": "149.99", "detalles": "Detalles del producto 2"}'>
+                  <img src="..//multmedia/images/jardin/2.jpg" alt="Producto 1" class="img-fluid">
+                </div>
+                <div class="producto-info">
+                  <h3>Mesa exterior</h3>
+                  <p class="producto-precio">Precio: $199.99</p>
+                  <p class="producto-subcategoria">Subcategoría: Jardín</p>
+                  <button class="btn btn-primary btn-agregar-carrito btn-custom">Agregar al carrito</button>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-4 col-md-6">
+              <div class="producto bg-gris-claro" data-subcategoria="Jardín">
+                <div class="producto-img"
+                  data-bs-toggle="modal"
+                  data-bs-target="#productoModal"
+                  data-producto-info='{"nombre": "Mesa exterior plástico", "imagen": "..//multmedia/images/jardin/3.jpg", "descripcion": "Descripción del producto 2", "precio": "149.99", "detalles": "Detalles del producto 2"}'>
+                  <img src="..//multmedia/images/jardin/3.jpg" alt="Producto 1" class="img-fluid">
+                </div>
+                <div class="producto-info">
+                  <h3>Mesa exterior plástico</h3>
+                  <p class="producto-precio">Precio: $199.99</p>
+                  <p class="producto-subcategoria">Subcategoría: Jardín</p>
+                  <button class="btn btn-primary btn-agregar-carrito btn-custom">Agregar al carrito</button>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-4 col-md-6">
+              <div class="producto bg-gris-claro" data-subcategoria="Jardín">
+                <div class="producto-img"
+                  data-bs-toggle="modal"
+                  data-bs-target="#productoModal"
+                  data-producto-info='{"nombre": "Mesa marrón", "imagen": "..//multmedia/images/jardin/4.jpg", "descripcion": "Descripción del producto 2", "precio": "149.99", "detalles": "Detalles del producto 2"}'>
+                  <img src="..//multmedia/images/jardin/4.jpg" alt="Producto 1" class="img-fluid">
+                </div>
+                <div class="producto-info">
+                  <h3>Mesa marrón</h3>
+                  <p class="producto-precio">Precio: $199.99</p>
+                  <p class="producto-subcategoria">Subcategoría: Jardín</p>
+                  <button class="btn btn-primary btn-agregar-carrito btn-custom">Agregar al carrito</button>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-4 col-md-6">
+              <div class="producto bg-gris-claro" data-subcategoria="Jardín">
+                <div class="producto-img"
+                  data-bs-toggle="modal"
+                  data-bs-target="#productoModal"
+                  data-producto-info='{"nombre": "Silla plástico", "imagen": "..//multmedia/images/jardin/5.jpg", "descripcion": "Descripción del producto 2", "precio": "149.99", "detalles": "Detalles del producto 2"}'>
+                  <img src="..//multmedia/images/jardin/5.jpg" alt="Producto 1" class="img-fluid">
+                </div>
+                <div class="producto-info">
+                  <h3>Silla plástico</h3>
+                  <p class="producto-precio">Precio: $199.99</p>
+                  <p class="producto-subcategoria">Subcategoría: Jardín</p>
+                  <button class="btn btn-primary btn-agregar-carrito btn-custom">Agregar al carrito</button>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-4 col-md-6">
+              <div class="producto bg-gris-claro" data-subcategoria="Jardín">
+                <div class="producto-img"
+                  data-bs-toggle="modal"
+                  data-bs-target="#productoModal"
+                  data-producto-info='{"nombre": "Mesa pino", "imagen": "..//multmedia/images/jardin/6.jpg", "descripcion": "Descripción del producto 2", "precio": "149.99", "detalles": "Detalles del producto 2"}'>
+                  <img src="..//multmedia/images/jardin/6.jpg" alt="Producto 1" class="img-fluid">
+                </div>
+                <div class="producto-info">
+                  <h3>Mesa pino</h3>
+                  <p class="producto-precio">Precio: $199.99</p>
+                  <p class="producto-subcategoria">Subcategoría: Jardín</p>
+                  <button class="btn btn-primary btn-agregar-carrito btn-custom">Agregar al carrito</button>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-4 col-md-6">
+              <div class="producto bg-gris-claro" data-subcategoria="Jardín">
+                <div class="producto-img"
+                  data-bs-toggle="modal"
+                  data-bs-target="#productoModal"
+                  data-producto-info='{"nombre": "Comedor exterior", "imagen": "..//multmedia/images/jardin/7.jpg", "descripcion": "Descripción del producto 2", "precio": "149.99", "detalles": "Detalles del producto 2"}'>
+                  <img src="..//multmedia/images/jardin/7.jpg" alt="Producto 1" class="img-fluid">
+                </div>
+                <div class="producto-info">
+                  <h3>Comedor exterior</h3>
+                  <p class="producto-precio">Precio: $199.99</p>
+                  <p class="producto-subcategoria">Subcategoría: Jardín</p>
+                  <button class="btn btn-primary btn-agregar-carrito btn-custom">Agregar al carrito</button>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-4 col-md-6">
+              <div class="producto bg-gris-claro" data-subcategoria="Jardín">
+                <div class="producto-img"
+                  data-bs-toggle="modal"
+                  data-bs-target="#productoModal"
+                  data-producto-info='{"nombre": "Silla plástico", "imagen": "..//multmedia/images/jardin/8.jpg", "descripcion": "Descripción del producto 2", "precio": "149.99", "detalles": "Detalles del producto 2"}'>
+                  <img src="..//multmedia/images/jardin/8.jpg" alt="Producto 1" class="img-fluid">
+                </div>
+                <div class="producto-info">
+                  <h3>Silla plástic</h3>
+                  <p class="producto-precio">Precio: $199.99</p>
+                  <p class="producto-subcategoria">Subcategoría: Jardín</p>
+                  <button class="btn btn-primary btn-agregar-carrito btn-custom">Agregar al carrito</button>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-4 col-md-6">
+              <div class="producto bg-gris-claro" data-subcategoria="Jardín">
+                <div class="producto-img"
+                  data-bs-toggle="modal"
+                  data-bs-target="#productoModal"
+                  data-producto-info='{"nombre": "Mesa exterior", "imagen": "..//multmedia/images/jardin/9.jpg", "descripcion": "Descripción del producto 2", "precio": "149.99", "detalles": "Detalles del producto 2"}'>
+                  <img src="..//multmedia/images/jardin/9.jpg" alt="Producto 1" class="img-fluid">
+                </div>
+                <div class="producto-info">
+                  <h3>Mesa exterior</h3>
+                  <p class="producto-precio">Precio: $199.99</p>
+                  <p class="producto-subcategoria">Subcategoría: Jardín</p>
+                  <button class="btn btn-primary btn-agregar-carrito btn-custom">Agregar al carrito</button>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-4 col-md-6">
+              <div class="producto bg-gris-claro" data-subcategoria="Jardín">
+                <div class="producto-img"
+                  data-bs-toggle="modal"
+                  data-bs-target="#productoModal"
+                  data-producto-info='{"nombre": "Mesa negra", "imagen": "..//multmedia/images/jardin/10.jpg", "descripcion": "Descripción del producto 2", "precio": "149.99", "detalles": "Detalles del producto 2"}'>
+                  <img src="..//multmedia/images/jardin/10.jpg" alt="Producto 1" class="img-fluid">
+                </div>
+                <div class="producto-info">
+                  <h3>Mesa negra</h3>
+                  <p class="producto-precio">Precio: $199.99</p>
+                  <p class="producto-subcategoria">Subcategoría: Jardín</p>
+                  <button class="btn btn-primary btn-agregar-carrito btn-custom">Agregar al carrito</button>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-4 col-md-6">
+              <div class="producto bg-gris-claro" data-subcategoria="Jardín">
+                <div class="producto-img"
+                  data-bs-toggle="modal"
+                  data-bs-target="#productoModal"
+                  data-producto-info='{"nombre": "Sillones exteriores", "imagen": "..//multmedia/images/jardin/11.jpg", "descripcion": "Descripción del producto 2", "precio": "149.99", "detalles": "Detalles del producto 2"}'>
+                  <img src="..//multmedia/images/jardin/11.jpg" alt="Producto 1" class="img-fluid">
+                </div>
+                <div class="producto-info">
+                  <h3>Sillones exteriores</h3>
+                  <p class="producto-precio">Precio: $199.99</p>
+                  <p class="producto-subcategoria">Subcategoría: Jardín</p>
+                  <button class="btn btn-primary btn-agregar-carrito btn-custom">Agregar al carrito</button>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-4 col-md-6">
+              <div class="producto bg-gris-claro" data-subcategoria="Living">
+                <div class="producto-img"
+                  data-bs-toggle="modal"
+                  data-bs-target="#productoModal"
+                  data-producto-info='{"nombre": "Juego living alfa", "imagen": "..//multmedia/images/living/1.jpg", "descripcion": "Descripción del producto 2", "precio": "149.99", "detalles": "Detalles del producto 2"}'>
+                  <img src="..//multmedia/images/living/1.jpg" alt="Producto 1" class="img-fluid">
+                </div>
+                <div class="producto-info">
+                  <h3>Juego living alfa</h3>
+                  <p class="producto-precio">Precio: $199.99</p>
+                  <p class="producto-subcategoria">Subcategoría: Living</p>
+                  <button class="btn btn-primary btn-agregar-carrito btn-custom">Agregar al carrito</button>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-4 col-md-6">
+              <div class="producto bg-gris-claro" data-subcategoria="Living">
+                <div class="producto-img"
+                  data-bs-toggle="modal"
+                  data-bs-target="#productoModal"
+                  data-producto-info='{"nombre": "Juego living beta", "imagen": "..//multmedia/images/living/2.jpg", "descripcion": "Descripción del producto 2", "precio": "149.99", "detalles": "Detalles del producto 2"}'>
+                  <img src="..//multmedia/images/living/2.jpg" alt="Producto 1" class="img-fluid">
+                </div>
+                <div class="producto-info">
+                  <h3>Juego living beta</h3>
+                  <p class="producto-precio">Precio: $199.99</p>
+                  <p class="producto-subcategoria">Subcategoría: Living</p>
+                  <button class="btn btn-primary btn-agregar-carrito btn-custom">Agregar al carrito</button>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-4 col-md-6">
+              <div class="producto bg-gris-claro" data-subcategoria="Living">
+                <div class="producto-img"
+                  data-bs-toggle="modal"
+                  data-bs-target="#productoModal"
+                  data-producto-info='{"nombre": "Sillon 3 cuerpos", "imagen": "..//multmedia/images/living/3.jpg", "descripcion": "Descripción del producto 2", "precio": "149.99", "detalles": "Detalles del producto 2"}'>
+                  <img src="..//multmedia/images/living/3.jpg" alt="Producto 1" class="img-fluid">
+                </div>
+                <div class="producto-info">
+                  <h3>Sillon 3 cuerpos</h3>
+                  <p class="producto-precio">Precio: $199.99</p>
+                  <p class="producto-subcategoria">Subcategoría: Living</p>
+                  <button class="btn btn-primary btn-agregar-carrito btn-custom">Agregar al carrito</button>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-4 col-md-6">
+              <div class="producto bg-gris-claro" data-subcategoria="Living">
+                <div class="producto-img"
+                  data-bs-toggle="modal"
+                  data-bs-target="#productoModal"
+                  data-producto-info='{"nombre": "Juego rack+mesa", "imagen": "..//multmedia/images/living/4.jpg", "descripcion": "Descripción del producto 2", "precio": "149.99", "detalles": "Detalles del producto 2"}'>
+                  <img src="..//multmedia/images/living/4.jpg" alt="Producto 1" class="img-fluid">
+                </div>
+                <div class="producto-info">
+                  <h3>Juego rack+mesa</h3>
+                  <p class="producto-precio">Precio: $199.99</p>
+                  <p class="producto-subcategoria">Subcategoría: Living</p>
+                  <button class="btn btn-primary btn-agregar-carrito btn-custom">Agregar al carrito</button>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-4 col-md-6">
+              <div class="producto bg-gris-claro" data-subcategoria="Living">
+                <div class="producto-img"
+                  data-bs-toggle="modal"
+                  data-bs-target="#productoModal"
+                  data-producto-info='{"nombre": "Sillón 3 cuerpos", "imagen": "..//multmedia/images/living/5.jpg", "descripcion": "Descripción del producto 2", "precio": "149.99", "detalles": "Detalles del producto 2"}'>
+                  <img src="..//multmedia/images/living/5.jpg" alt="Producto 1" class="img-fluid">
+                </div>
+                <div class="producto-info">
+                  <h3>Sillón 3 cuerpos</h3>
+                  <p class="producto-precio">Precio: $199.99</p>
+                  <p class="producto-subcategoria">Subcategoría: Living</p>
+                  <button class="btn btn-primary btn-agregar-carrito btn-custom">Agregar al carrito</button>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-4 col-md-6">
+              <div class="producto bg-gris-claro" data-subcategoria="Living">
+                <div class="producto-img"
+                  data-bs-toggle="modal"
+                  data-bs-target="#productoModal"
+                  data-producto-info='{"nombre": "Poltronas", "imagen": "..//multmedia/images/living/6.jpg", "descripcion": "Descripción del producto 2", "precio": "149.99", "detalles": "Detalles del producto 2"}'>
+                  <img src="..//multmedia/images/living/6.jpg" alt="Producto 1" class="img-fluid">
+                </div>
+                <div class="producto-info">
+                  <h3>Poltronas</h3>
+                  <p class="producto-precio">Precio: $199.99</p>
+                  <p class="producto-subcategoria">Subcategoría: Living</p>
+                  <button class="btn btn-primary btn-agregar-carrito btn-custom">Agregar al carrito</button>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-4 col-md-6">
+              <div class="producto bg-gris-claro" data-subcategoria="Living">
+                <div class="producto-img"
+                  data-bs-toggle="modal"
+                  data-bs-target="#productoModal"
+                  data-producto-info='{"nombre": "Sillón platinum", "imagen": "..//multmedia/images/living/7.jpg", "descripcion": "Descripción del producto 2", "precio": "149.99", "detalles": "Detalles del producto 2"}'>
+                  <img src="..//multmedia/images/living/7.jpg" alt="Producto 1" class="img-fluid">
+                </div>
+                <div class="producto-info">
+                  <h3>Sillón platinum</h3>
+                  <p class="producto-precio">Precio: $199.99</p>
+                  <p class="producto-subcategoria">Subcategoría: Living</p>
+                  <button class="btn btn-primary btn-agregar-carrito btn-custom">Agregar al carrito</button>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-4 col-md-6">
+              <div class="producto bg-gris-claro" data-subcategoria="Living">
+                <div class="producto-img"
+                  data-bs-toggle="modal"
+                  data-bs-target="#productoModal"
+                  data-producto-info='{"nombre": "Sillon arga", "imagen": "..//multmedia/images/living/8.jpg", "descripcion": "Descripción del producto 2", "precio": "149.99", "detalles": "Detalles del producto 2"}'>
+                  <img src="..//multmedia/images/living/8.jpg" alt="Producto 1" class="img-fluid">
+                </div>
+                <div class="producto-info">
+                  <h3>Sillon arga</h3>
+                  <p class="producto-precio">Precio: $199.99</p>
+                  <p class="producto-subcategoria">Subcategoría: Living</p>
+                  <button class="btn btn-primary btn-agregar-carrito btn-custom">Agregar al carrito</button>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-4 col-md-6">
+              <div class="producto bg-gris-claro" data-subcategoria="Living">
+                <div class="producto-img"
+                  data-bs-toggle="modal"
+                  data-bs-target="#productoModal"
+                  data-producto-info='{"nombre": "Sillon mero", "imagen": "..//multmedia/images/living/9.jpg", "descripcion": "Descripción del producto 2", "precio": "149.99", "detalles": "Detalles del producto 2"}'>
+                  <img src="..//multmedia/images/living/9.jpg" alt="Producto 1" class="img-fluid">
+                </div>
+                <div class="producto-info">
+                  <h3>Sillon mero</h3>
+                  <p class="producto-precio">Precio: $199.99</p>
+                  <p class="producto-subcategoria">Subcategoría: Living</p>
+                  <button class="btn btn-primary btn-agregar-carrito btn-custom">Agregar al carrito</button>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-4 col-md-6">
+              <div class="producto bg-gris-claro" data-subcategoria="Living">
+                <div class="producto-img"
+                  data-bs-toggle="modal"
+                  data-bs-target="#productoModal"
+                  data-producto-info='{"nombre": "Sillon high", "imagen": "..//multmedia/images/living/10.jpg", "descripcion": "Descripción del producto 2", "precio": "149.99", "detalles": "Detalles del producto 2"}'>
+                  <img src="..//multmedia/images/living/10.jpg" alt="Producto 1" class="img-fluid">
+                </div>
+                <div class="producto-info">
+                  <h3>Sillon high</h3>
+                  <p class="producto-precio">Precio: $199.99</p>
+                  <p class="producto-subcategoria">Subcategoría: Living</p>
+                  <button class="btn btn-primary btn-agregar-carrito btn-custom">Agregar al carrito</button>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-4 col-md-6">
+              <div class="producto bg-gris-claro" data-subcategoria="Living">
+                <div class="producto-img"
+                  data-bs-toggle="modal"
+                  data-bs-target="#productoModal"
+                  data-producto-info='{"nombre": "Sillon dent", "imagen": "..//multmedia/images/living/11.jpg", "descripcion": "Descripción del producto 2", "precio": "149.99", "detalles": "Detalles del producto 2"}'>
+                  <img src="..//multmedia/images/living/11.jpg" alt="Producto 1" class="img-fluid">
+                </div>
+                <div class="producto-info">
+                  <h3>Sillon dent</h3>
+                  <p class="producto-precio">Precio: $199.99</p>
+                  <p class="producto-subcategoria">Subcategoría: Living</p>
+                  <button class="btn btn-primary btn-agregar-carrito btn-custom">Agregar al carrito</button>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-4 col-md-6">
+              <div class="producto bg-gris-claro" data-subcategoria="Living">
+                <div class="producto-img"
+                  data-bs-toggle="modal"
+                  data-bs-target="#productoModal"
+                  data-producto-info='{"nombre": "Poltrona black", "imagen": "..//multmedia/images/living/12.jpg", "descripcion": "Descripción del producto 2", "precio": "149.99", "detalles": "Detalles del producto 2"}'>
+                  <img src="..//multmedia/images/living/12.jpg" alt="Producto 1" class="img-fluid">
+                </div>
+                <div class="producto-info">
+                  <h3>Poltrona black</h3>
+                  <p class="producto-precio">Precio: $199.99</p>
+                  <p class="producto-subcategoria">Subcategoría: Living</p>
+                  <button class="btn btn-primary btn-agregar-carrito btn-custom">Agregar al carrito</button>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-4 col-md-6">
+              <div class="producto bg-gris-claro" data-subcategoria="Oficina">
+                <div class="producto-img"
+                  data-bs-toggle="modal"
+                  data-bs-target="#productoModal"
+                  data-producto-info='{"nombre": "Juego escritorio", "imagen": "..//multmedia/images/oficina/1.jpg", "descripcion": "Descripción del producto 2", "precio": "149.99", "detalles": "Detalles del producto 2"}'>
+                  <img src="..//multmedia/images/oficina/1.jpg" alt="Producto 1" class="img-fluid">
+                </div>
+                <div class="producto-info">
+                  <h3>Juego escritorio</h3>
+                  <p class="producto-precio">Precio: $199.99</p>
+                  <p class="producto-subcategoria">Subcategoría: Oficina</p>
+                  <button class="btn btn-primary btn-agregar-carrito btn-custom">Agregar al carrito</button>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-4 col-md-6">
+              <div class="producto bg-gris-claro" data-subcategoria="Oficina">
+                <div class="producto-img"
+                  data-bs-toggle="modal"
+                  data-bs-target="#productoModal"
+                  data-producto-info='{"nombre": "Silla red", "imagen": "..//multmedia/images/oficina/2.jpg", "descripcion": "Descripción del producto 2", "precio": "149.99", "detalles": "Detalles del producto 2"}'>
+                  <img src="..//multmedia/images/oficina/2.jpg" alt="Producto 1" class="img-fluid">
+                </div>
+                <div class="producto-info">
+                  <h3>Silla red</h3>
+                  <p class="producto-precio">Precio: $199.99</p>
+                  <p class="producto-subcategoria">Subcategoría: Oficina</p>
+                  <button class="btn btn-primary btn-agregar-carrito btn-custom">Agregar al carrito</button>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-4 col-md-6">
+              <div class="producto bg-gris-claro" data-subcategoria="Oficina">
+                <div class="producto-img"
+                  data-bs-toggle="modal"
+                  data-bs-target="#productoModal"
+                  data-producto-info='{"nombre": "Escritorio mod", "imagen": "..//multmedia/images/oficina/3.jpg", "descripcion": "Descripción del producto 2", "precio": "149.99", "detalles": "Detalles del producto 2"}'>
+                  <img src="..//multmedia/images/oficina/3.jpg" alt="Producto 1" class="img-fluid">
+                </div>
+                <div class="producto-info">
+                  <h3>Escritorio mod</h3>
+                  <p class="producto-precio">Precio: $199.99</p>
+                  <p class="producto-subcategoria">Subcategoría: Oficina</p>
+                  <button class="btn btn-primary btn-agregar-carrito btn-custom">Agregar al carrito</button>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-4 col-md-6">
+              <div class="producto bg-gris-claro" data-subcategoria="Oficina">
+                <div class="producto-img"
+                  data-bs-toggle="modal"
+                  data-bs-target="#productoModal"
+                  data-producto-info='{"nombre": "Silla blue", "imagen": "..//multmedia/images/oficina/4.jpg", "descripcion": "Descripción del producto 2", "precio": "149.99", "detalles": "Detalles del producto 2"}'>
+                  <img src="..//multmedia/images/oficina/4.jpg" alt="Producto 1" class="img-fluid">
+                </div>
+                <div class="producto-info">
+                  <h3>Silla blue</h3>
+                  <p class="producto-precio">Precio: $199.99</p>
+                  <p class="producto-subcategoria">Subcategoría: Oficina</p>
+                  <button class="btn btn-primary btn-agregar-carrito btn-custom">Agregar al carrito</button>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-4 col-md-6">
+              <div class="producto bg-gris-claro" data-subcategoria="Oficina">
+                <div class="producto-img"
+                  data-bs-toggle="modal"
+                  data-bs-target="#productoModal"
+                  data-producto-info='{"nombre": "Librero moderno", "imagen": "..//multmedia/images/oficina/5.jpg", "descripcion": "Descripción del producto 2", "precio": "149.99", "detalles": "Detalles del producto 2"}'>
+                  <img src="..//multmedia/images/oficina/5.jpg" alt="Producto 1" class="img-fluid">
+                </div>
+                <div class="producto-info">
+                  <h3>Librero moderno</h3>
+                  <p class="producto-precio">Precio: $199.99</p>
+                  <p class="producto-subcategoria">Subcategoría: Oficina</p>
+                  <button class="btn btn-primary btn-agregar-carrito btn-custom">Agregar al carrito</button>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-4 col-md-6">
+              <div class="producto bg-gris-claro" data-subcategoria="Oficina">
+                <div class="producto-img"
+                  data-bs-toggle="modal"
+                  data-bs-target="#productoModal"
+                  data-producto-info='{"nombre": "Librero rústico", "imagen": "..//multmedia/images/oficina/6.jpg", "descripcion": "Descripción del producto 2", "precio": "149.99", "detalles": "Detalles del producto 2"}'>
+                  <img src="..//multmedia/images/oficina/6.jpg" alt="Producto 1" class="img-fluid">
+                </div>
+                <div class="producto-info">
+                  <h3>Librero rústico</h3>
+                  <p class="producto-precio">Precio: $199.99</p>
+                  <p class="producto-subcategoria">Subcategoría: Oficina</p>
+                  <button class="btn btn-primary btn-agregar-carrito btn-custom">Agregar al carrito</button>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-4 col-md-6">
+              <div class="producto bg-gris-claro" data-subcategoria="Oficina">
+                <div class="producto-img"
+                  data-bs-toggle="modal"
+                  data-bs-target="#productoModal"
+                  data-producto-info='{"nombre": "silla escritorio", "imagen": "..//multmedia/images/oficina/7.jpg", "descripcion": "Descripción del producto 2", "precio": "149.99", "detalles": "Detalles del producto 2"}'>
+                  <img src="..//multmedia/images/oficina/7.jpg" alt="Producto 1" class="img-fluid">
+                </div>
+                <div class="producto-info">
+                  <h3>silla escritorio</h3>
+                  <p class="producto-precio">Precio: $199.99</p>
+                  <p class="producto-subcategoria">Subcategoría: Oficina</p>
+                  <button class="btn btn-primary btn-agregar-carrito btn-custom">Agregar al carrito</button>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-4 col-md-6">
+              <div class="producto bg-gris-claro" data-subcategoria="Oficina">
+                <div class="producto-img"
+                  data-bs-toggle="modal"
+                  data-bs-target="#productoModal"
+                  data-producto-info='{"nombre": "Librero par", "imagen": "..//multmedia/images/oficina/8.jpg", "descripcion": "Descripción del producto 2", "precio": "149.99", "detalles": "Detalles del producto 2"}'>
+                  <img src="..//multmedia/images/oficina/8.jpg" alt="Producto 1" class="img-fluid">
+                </div>
+                <div class="producto-info">
+                  <h3>Librero par</h3>
+                  <p class="producto-precio">Precio: $199.99</p>
+                  <p class="producto-subcategoria">Subcategoría: Oficina</p>
+                  <button class="btn btn-primary btn-agregar-carrito btn-custom">Agregar al carrito</button>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-4 col-md-6">
+              <div class="producto bg-gris-claro" data-subcategoria="Oficina">
+                <div class="producto-img"
+                  data-bs-toggle="modal"
+                  data-bs-target="#productoModal"
+                  data-producto-info='{"nombre": "Escritorio moderno", "imagen": "..//multmedia/images/oficina/9.jpg", "descripcion": "Descripción del producto 2", "precio": "149.99", "detalles": "Detalles del producto 2"}'>
+                  <img src="..//multmedia/images/oficina/9.jpg" alt="Producto 1" class="img-fluid">
+                </div>
+                <div class="producto-info">
+                  <h3>Escritorio moderno</h3>
+                  <p class="producto-precio">Precio: $199.99</p>
+                  <p class="producto-subcategoria">Subcategoría: Oficina</p>
+                  <button class="btn btn-primary btn-agregar-carrito btn-custom">Agregar al carrito</button>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-4 col-md-6">
+              <div class="producto bg-gris-claro" data-subcategoria="Oficina">
+                <div class="producto-img"
+                  data-bs-toggle="modal"
+                  data-bs-target="#productoModal"
+                  data-producto-info='{"nombre": "Silla black", "imagen": "..//multmedia/images/oficina/10.jpg", "descripcion": "Descripción del producto 2", "precio": "149.99", "detalles": "Detalles del producto 2"}'>
+                  <img src="..//multmedia/images/oficina/10.jpg" alt="Producto 1" class="img-fluid">
+                </div>
+                <div class="producto-info">
+                  <h3>Silla black</h3>
+                  <p class="producto-precio">Precio: $199.99</p>
+                  <p class="producto-subcategoria">Subcategoría: Oficina</p>
+                  <button class="btn btn-primary btn-agregar-carrito btn-custom">Agregar al carrito</button>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-4 col-md-6">
+              <div class="producto bg-gris-claro" data-subcategoria="Oficina">
+                <div class="producto-img"
+                  data-bs-toggle="modal"
+                  data-bs-target="#productoModal"
+                  data-producto-info='{"nombre": "Escritorio minimalista", "imagen": "..//multmedia/images/oficina/11.jpg", "descripcion": "Descripción del producto 2", "precio": "149.99", "detalles": "Detalles del producto 2"}'>
+                  <img src="..//multmedia/images/oficina/11.jpg" alt="Producto 1" class="img-fluid">
+                </div>
+                <div class="producto-info">
+                  <h3>Escritorio minimalista</h3>
+                  <p class="producto-precio">Precio: $199.99</p>
+                  <p class="producto-subcategoria">Subcategoría: Oficina</p>
+                  <button class="btn btn-primary btn-agregar-carrito btn-custom">Agregar al carrito</button>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-4 col-md-6">
+              <div class="producto bg-gris-claro" data-subcategoria="Oficina">
+                <div class="producto-img"
+                  data-bs-toggle="modal"
+                  data-bs-target="#productoModal"
+                  data-producto-info='{"nombre": "Librero black", "imagen": "..//multmedia/images/oficina/12.jpg", "descripcion": "Descripción del producto 2", "precio": "149.99", "detalles": "Detalles del producto 2"}'>
+                  <img src="..//multmedia/images/oficina/12.jpg" alt="Producto 1" class="img-fluid">
+                </div>
+                <div class="producto-info">
+                  <h3>Librero black</h3>
+                  <p class="producto-precio">Precio: $199.99</p>
+                  <p class="producto-subcategoria">Subcategoría: Oficina</p>
+                  <button class="btn btn-primary btn-agregar-carrito btn-custom">Agregar al carrito</button>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
     </div>
-    
-    <div class="container">
-      <div class="row">
-        <div class="col text-center">
-          <nav aria-label="Page navigation">
-            <ul class="pagination justify-content-center">
-              <li class="page-item disabled">
-                <a class="page-link" href="#" tabindex="-1" aria-disabled="true">Anterior</a>
-              </li>
-              <li class="page-item"><a class="page-link" href="#" onclick="mostrarProductos(1)">1</a></li>
-              <li class="page-item"><a class="page-link" href="#" onclick="mostrarProductos(2)">2</a></li>
-              <li class="page-item"><a class="page-link" href="#" onclick="mostrarProductos(3)">3</a></li>
-              <li class="page-item">
-                <a class="page-link" href="#">Siguiente</a>
-              </li>
-            </ul>
-          </nav>
-        </div>
-      </div>
-    </div>
+    <nav aria-label="Page navigation example">
+      <ul class="pagination justify-content-center">
+        <li class="page-item disabled">
+          <a class="page-link">Previous</a>
+        </li>
+        <li class="page-item"><a class="page-link" href="#">1</a></li>
+        <li class="page-item"><a class="page-link" href="#">2</a></li>
+        <li class="page-item"><a class="page-link" href="#">3</a></li>
+        <li class="page-item">
+          <a class="page-link" href="#">Next</a>
+        </li>
+      </ul>
+    </nav>
   </main>
   
   
@@ -522,8 +1321,30 @@
         <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3272.12946261802!2d-56.138683124534495!3d-34.90320047284847!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x959f811610232aff%3A0xccbfb691fb160492!2sMontevideo%20Shopping%20Center!5e0!3m2!1ses-419!2suy!4v1686863440471!5m2!1ses-419!2suy" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
     </div>
   </footer>
+
+<!-- Modal -->
+<div class="modal fade" id="productoModal" tabindex="-1" aria-labelledby="productoModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="productoModalLabel">Detalles del Producto</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body" id="productoModalBody">
+        <!-- Aquí se mostrarán las especificaciones del producto -->
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
   <script src="..//js/custom-script.js"></script>
-    <script src="https://kit.fontawesome.com/ba45cde2f7.js" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="https://kit.fontawesome.com/ba45cde2f7.js" crossorigin="anonymous"></script>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
 </body>
 </html>

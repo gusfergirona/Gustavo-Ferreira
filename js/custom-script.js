@@ -54,19 +54,19 @@ navLinks.forEach(function(link) {
 });
 
 function mostrarProductos() {
-  const categoriaSelect = document.getElementById("categoria-select");
-  const categoriaSeleccionada = categoriaSelect.value;
+  var categoriaSeleccionada = document.getElementById("categoria-select").value;
+  var productos = document.querySelectorAll(".producto");
 
-  const productos = document.querySelectorAll(".categoria-producto");
-  productos.forEach((producto) => {
-    const categoriaProducto = producto.dataset.categoria;
-    if (categoriaProducto === categoriaSeleccionada || categoriaSeleccionada === "") {
-      producto.style.display = "block";
-    } else {
-      producto.style.display = "none";
-    }
-  });
+  for (var i = 0; i < productos.length; i++) {
+      var subcategoria = productos[i].getAttribute("data-subcategoria");
+      if (categoriaSeleccionada === "" || subcategoria === categoriaSeleccionada) {
+          productos[i].style.display = "block";
+      } else {
+          productos[i].style.display = "none";
+      }
+  }
 }
+
 
 // Modal
 document.addEventListener('DOMContentLoaded', function () {
